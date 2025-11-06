@@ -1,0 +1,323 @@
+name: Deploy Hugo site to Pages
+# This is a reusable workflow for deploying Hugo sites with branch previews
+# Copy this file to your site's .github/workflows/ directory
+
+on:
+  push:
+    branches:
+      - '**'  # Trigger on all branch pushes
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+  pull-requests: write  # Needed for PR comments
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref_name }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+    outputs:
+      has_pr: ${{ steps.check.outputs.has_pr || 'false' }}
+    steps:
+      - name: Check if branch has PR
+        id: check
+        if: github.event_name == 'push' && github.ref != 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          # Use the GitHub API directly instead of the CLI to avoid needing git checkout
+          PR=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$REPO/pulls?head=${REPO%/*}:$BRANCH&state=open")
+
+          if [ "$(echo "$PR" | jq '. | length')" -gt 0 ]; then
+            echo "has_pr=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_pr=false" >> $GITHUB_OUTPUT
+          fi
+
+  build:
+    needs: check-pr
+    # Skip if this is a push to a branch that has an active PR
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || needs.check-pr.outputs.has_pr != 'true'
+    runs-on: ubuntu-latest
+    env:
+      DART_SASS_VERSION: 1.93.2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0  # Get all history for proper branch handling
+          # For PRs from forks, we need to specify the ref explicitly
+          ref: ${{ github.event.pull_request.head.sha }}
+          # For fork PRs, we need to fetch from the fork
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+
+      - name: Install tools with mise
+        uses: jdx/mise-action@v3
+        with:
+          cache: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Dart Sass
+        run: |
+          curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          tar -C "${HOME}" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          echo "${HOME}/dart-sass" >> "${GITHUB_PATH}"
+
+      - name: Initialize Hugo modules and theme
+        run: |
+          # Get Hugo modules
+          hugo mod get -u
+
+          # Initialize theme UIKit dependency using the theme's init script
+          bash "$(hugo config mounts | jq -rs '.[] | select(.path | contains("z43-cards-theme")) | .dir')/init-theme.sh"
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Download previous site
+        id: download
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: deploy-hugo.yaml
+          name: github-pages
+          path: current-site
+          if_no_artifact_found: ignore
+        continue-on-error: true
+
+      - name: Prepare site directory
+        run: |
+          mkdir -p current-site
+
+          if [ -f current-site/artifact.tar ]; then
+            tar xf current-site/artifact.tar -C current-site
+            rm current-site/artifact.tar
+            echo "Extracted site from artifact"
+          elif [ "${{ github.event_name }}" != "push" ] || [ "${{ github.ref }}" != "refs/heads/main" ]; then
+            # If no artifact and not a push to main branch, download from live site
+            echo "No artifact found, downloading from live site: ${{ steps.pages.outputs.base_url }}"
+
+            # Use wget to mirror the live site
+            # Include both the main index and previews.html to discover all branch previews
+            # Must use --execute robots=off because robots.txt blocks /branch-* paths
+            wget --recursive \
+                 --level=inf \
+                 --no-parent \
+                 --no-host-directories \
+                 --quiet \
+                 --directory-prefix=current-site \
+                 --page-requisites \
+                 --execute robots=off \
+                 --tries=3 \
+                 --timeout=30 \
+                 "${{ steps.pages.outputs.base_url }}/" \
+                 "${{ steps.pages.outputs.base_url }}/previews.html"
+
+            # Validate download was successful
+            BRANCH_COUNT=$(find current-site -maxdepth 1 -type d -name "branch-*" | wc -l)
+            if [ ! -f current-site/index.html ] && [ "$BRANCH_COUNT" -eq 0 ]; then
+              echo "Error: Failed to download existing site - no index.html or branch directories found"
+              exit 1
+            fi
+
+            echo "Successfully downloaded existing site (found index.html or $BRANCH_COUNT branch directories)"
+          fi
+
+      # For fork PRs, verify the contents are safe
+      - name: Verify fork PR
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          echo "Running security checks for fork PR..."
+
+          echo "1. Checking for suspicious files..."
+          SUSPICIOUS_FILES=$(find . -type f -name "*.php" -o -name "*.cgi" -o -name "*.sh" -o -name "*.exe" -o -name "*.dll" || true)
+          if [ ! -z "$SUSPICIOUS_FILES" ]; then
+            echo "Error: Found potentially suspicious files:"
+            echo "$SUSPICIOUS_FILES"
+            exit 1
+          fi
+
+          echo "2. Checking for changes outside allowed paths..."
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          # Adjust these patterns based on your repository structure
+          ALLOWED_PATTERNS="^content/|^static/|^layouts/|^data/|^i18n/|^assets/"
+          SUSPICIOUS_PATHS=$(echo "$CHANGED_FILES" | grep -vE "$ALLOWED_PATTERNS" || true)
+          if [ ! -z "$SUSPICIOUS_PATHS" ]; then
+            echo "Error: Changes detected outside allowed directories:"
+            echo "$SUSPICIOUS_PATHS"
+            exit 1
+          fi
+
+          echo "3. Checking repository size..."
+          TOTAL_SIZE=$(du -sm . | cut -f1)
+          if [ $TOTAL_SIZE -gt 500 ]; then
+            echo "Error: Repository size exceeds 500MB limit"
+            exit 1
+          fi
+
+          echo "4. Validating Hugo configuration..."
+          if ! hugo config; then
+            echo "Error: Invalid Hugo configuration"
+            exit 1
+          fi
+
+          echo "5. Checking for suspicious config changes..."
+          if git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep -q 'config\.'; then
+            echo "Warning: Configuration file changes detected"
+            CONFIG_CHANGES=$(git diff ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} -- config.*)
+            echo "$CONFIG_CHANGES"
+
+            # Check for suspicious patterns
+            if echo "$CONFIG_CHANGES" | grep -iE "curl|wget|http|exec|eval|system|rm|remove|delete"; then
+              echo "Error: Suspicious patterns found in config changes"
+              exit 1
+            fi
+          fi
+
+          echo "6. Checking for large files..."
+          LARGE_FILES=$(find . -type f -size +10M)
+          if [ ! -z "$LARGE_FILES" ]; then
+            echo "Error: Found files larger than 10MB:"
+            echo "$LARGE_FILES"
+            exit 1
+          fi
+
+          echo "7. Checking for binary files..."
+          BINARY_FILES=$(find . -type f -exec file {} \; | grep "executable" || true)
+          if [ ! -z "$BINARY_FILES" ]; then
+            echo "Error: Found binary executable files:"
+            echo "$BINARY_FILES"
+            exit 1
+          fi
+
+          echo "8. Validating content structure..."
+          # Add checks specific to your Hugo site structure
+          if [ ! -d "content" ]; then
+            echo "Error: Missing content directory"
+            exit 1
+          fi
+
+          echo "Security checks passed!"
+
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          # Determine branch name based on event type
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="${{ github.head_ref }}"
+          else
+            BRANCH="${GITHUB_REF#refs/heads/}"
+          fi
+
+          if [ "$BRANCH" = "main" ]; then
+            # Main branch - save branch directories first
+            mkdir -p temp-dirs
+            mv current-site/branch-* temp-dirs/ 2>/dev/null || true
+
+            # Build main site
+            hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+            rm -rf current-site/*
+            cp -r public/* current-site/
+
+            # Restore branch directories
+            mv temp-dirs/* current-site/ 2>/dev/null || true
+            rm -rf temp-dirs
+          else
+            # Branch build
+            hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/branch-${BRANCH}/"
+            mkdir -p current-site/branch-${BRANCH}
+            rm -rf current-site/branch-${BRANCH}/*
+            cp -r public/* current-site/branch-${BRANCH}/
+          fi
+
+      - name: Generate preview index
+        run: |
+          cat > current-site/previews.html << 'EOL'
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Branch Previews</title>
+              <meta name="robots" content="noindex,nofollow">
+              <meta name="googlebot" content="noindex,nofollow">
+              <style>
+                body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+                .preview-list { list-style: none; padding: 0; }
+                .preview-list li { margin: 10px 0; padding: 10px; border: 1px solid #eee; border-radius: 4px; }
+                .preview-type { font-weight: bold; margin-right: 10px; }
+                a { color: #0366d6; text-decoration: none; }
+                a:hover { text-decoration: underline; }
+              </style>
+          </head>
+          <body>
+          <h1>Branch Previews</h1>
+          <ul class="preview-list">
+          EOL
+
+          for branch in current-site/branch-*/; do
+            if [ -d "$branch" ]; then
+              branch_name=$(basename "$branch" | sed 's/branch-//')
+              echo "<li><span class='preview-type'>Branch:</span><a href='branch-${branch_name}/'>${branch_name}</a></li>" >> current-site/previews.html
+            fi
+          done
+
+          cat >> current-site/previews.html << EOL
+          </ul>
+          <p>Last updated: $(date)</p>
+          </body></html>
+          EOL
+
+      - name: Add robots.txt
+        run: |
+          cat > current-site/robots.txt << 'EOL'
+          User-agent: *
+          Disallow: /branch-
+          EOL
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🚀 Branch preview deployed!
+
+            You can view your changes at: ${{ steps.pages.outputs.base_url }}/branch-${{ github.head_ref }}/
+
+            View all branch previews at: ${{ steps.pages.outputs.base_url }}/previews.html
+
+            ${{ github.event.pull_request.head.repo.full_name != github.repository && '⚠️ Note: This PR is from a fork. Additional security checks were performed.' || '' }}
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./current-site
+          retention-days: 7
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

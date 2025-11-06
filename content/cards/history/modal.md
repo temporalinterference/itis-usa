@@ -1,0 +1,50 @@
+---
+id: history
+---
+
+## Our History
+
+IT'IS USA represents the United States presence of the IT'IS Foundation, building on over 20 years of scientific leadership in bioelectromagnetics research.
+
+### Foundation Origins
+
+The IT'IS Foundation was established in 1999 in Zurich, Switzerland, with the mission of assessing the health impact of electromagnetic fields and developing therapeutic applications of this technology.
+
+### Expansion to the USA
+
+IT'IS USA was established to:
+- Strengthen collaboration with U.S. research institutions
+- Engage with U.S. regulatory agencies
+- Support American industry innovation
+- Address region-specific research needs
+- Facilitate standards development in the U.S.
+
+### Key Milestones
+
+**2000s: Pioneering Research**
+- Development of anatomical modeling techniques
+- Launch of Virtual Population models
+- Establishment of tissue properties database
+
+**2010s: International Leadership**
+- Major contributions to international safety standards
+- Breakthrough medical device safety assessments
+- Advanced in silico clinical trial methods
+
+**2020s: Innovation and Growth**
+- 5G exposure assessment leadership
+- Machine learning integration
+- Expansion of medical applications
+- IT'IS USA establishment
+
+### Global Impact
+
+IT'IS research has influenced:
+- International exposure guidelines
+- Medical device regulations
+- Telecommunications standards
+- Clinical practice worldwide
+
+### Looking Forward
+
+IT'IS USA continues to push the boundaries of bioelectromagnetics research, addressing emerging challenges and opportunities in our increasingly connected world.
