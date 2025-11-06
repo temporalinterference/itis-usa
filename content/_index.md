@@ -4,8 +4,7 @@ Description: |
   The Foundation for Research on Information Technologies in Society USA
 ---
 
-{{< modal-image banner.jpg >}}
-{{< /modal-image >}}
+{{< banner-image banner.jpg >}}
 
 {{< title claim="The Foundation for Research on Information Technologies in Society USA" >}}
 IT'IS USA
