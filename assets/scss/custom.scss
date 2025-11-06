@@ -1,0 +1,117 @@
+/* Custom SCSS for IT'IS USA site */
+/* Source Sans 3 font definitions */
+
+/* source-sans-3-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans ';
+  font-style: normal;
+  font-weight: 300;
+  src: url('{{ (resources.Get "fonts/source-sans-3-v19-latin-300.woff2").RelPermalink }}') format('woff2');
+}
+
+/* source-sans-3-300italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 300;
+  src: url('{{ (resources.Get "fonts/source-sans-3-v19-latin-300italic.woff2").RelPermalink }}') format('woff2');
+}
+
+/* source-sans-3-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  src: url('{{ (resources.Get "fonts/source-sans-3-v19-latin-regular.woff2").RelPermalink }}') format('woff2');
+}
+
+/* source-sans-3-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 400;
+  src: url('{{ (resources.Get "fonts/source-sans-3-v19-latin-italic.woff2").RelPermalink }}') format('woff2');
+}
+
+/* source-sans-3-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 500;
+  src: url('{{ (resources.Get "fonts/source-sans-3-v19-latin-500.woff2").RelPermalink }}') format('woff2');
+}
+
+/* source-sans-3-500italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 500;
+  src: url('{{ (resources.Get "fonts/source-sans-3-v19-latin-500italic.woff2").RelPermalink }}') format('woff2');
+}
+
+/* Header gradient styling - white to red */
+.uk-navbar-container:not(.uk-navbar-transparent),
+#footer
+ {
+  background: linear-gradient(to right, #ffffff var(--ti-margin-measure-left), #BF0A30 calc(99% - var(--ti-margin-measure-right))) !important;
+}
+
+footer {
+  color:  {{ .Site.Params.colors.emphasis }};
+  a {
+    color:  {{ .Site.Params.colors.emphasis }};
+  }
+}
+
+.ti-title.ti-claim {
+  color:  {{ .Site.Params.colors.link }};
+  line-height: 1.2;
+  font-size: 1.2em;
+  text-align: left;
+  font-style: italic;
+}
+
+
+h1,h2 {
+  font-weight: 500;
+}
+
+#banner-image-container {
+  margin-top: 0;
+}
+
+/* Logo color adjustment */
+.uk-navbar-container .uk-logo {
+  /* Logo image will show naturally */
+}
+
+.uk-navbar-container .uk-navbar-toggle {
+  color: {{ .Site.Params.colors.navbarBackground }};
+}
+
+.uk-navbar-container .uk-navbar-toggle svg {
+  stroke: rgba(255, 255, 255, 0.0);
+  fill: {{ .Site.Params.colors.navbarBackground }};
+}
+
+/* Remove space between header and banner */
+.uk-navbar-container {
+  margin-bottom: 0 !important;
+}
+
+.uk-section:first-of-type {
+  padding-top: 0 !important;
+}
+
+/* Ensure banner image sits flush against navbar */
+body > img:first-of-type,
+.uk-navbar-container + img {
+  display: block;
+  margin-top: 0 !important;
+}
