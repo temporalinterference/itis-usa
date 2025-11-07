@@ -102,6 +102,7 @@ jobs:
 
       - name: Prepare site directory
         run: |
+          set -x
           mkdir -p current-site
 
           if [ -f current-site/artifact.tar ]; then
@@ -129,7 +130,7 @@ jobs:
                  "${{ steps.pages.outputs.base_url }}/previews.html"
             SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's{^https?://[^/]+/?}{}')
             if [ ! -z "${SUBDIR}" ]; then
-              mv "current-site/${SUBDIR}" current-site
+              mv "current-site/${SUBDIR}" current-site-new && rm -rf current-site && mv current-site-new current-site
             fi
             # Validate download was successful
             BRANCH_COUNT=$(find current-site -maxdepth 1 -type d -name "branch-*" | wc -l)
