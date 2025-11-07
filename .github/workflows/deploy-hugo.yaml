@@ -127,7 +127,10 @@ jobs:
                  --timeout=30 \
                  "${{ steps.pages.outputs.base_url }}/" \
                  "${{ steps.pages.outputs.base_url }}/previews.html"
-
+            SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's/^http.+\/?//')
+            if [ ! -z "${SUBDIR}" ]; then
+              mv "current-dir/${SUBDIR}" current-dir
+            fi
             # Validate download was successful
             BRANCH_COUNT=$(find current-site -maxdepth 1 -type d -name "branch-*" | wc -l)
             if [ ! -f current-site/index.html ] && [ "$BRANCH_COUNT" -eq 0 ]; then
