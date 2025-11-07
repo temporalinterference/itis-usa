@@ -127,7 +127,7 @@ jobs:
                  --timeout=30 \
                  "${{ steps.pages.outputs.base_url }}/" \
                  "${{ steps.pages.outputs.base_url }}/previews.html"
-            SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's/^http.+\/?//')
+            SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's{^https?://.+?/?//')
             if [ ! -z "${SUBDIR}" ]; then
               mv "current-dir/${SUBDIR}" current-dir
             fi
