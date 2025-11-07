@@ -129,7 +129,7 @@ jobs:
                  "${{ steps.pages.outputs.base_url }}/previews.html"
             SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's{^https?://[^/]+/?}{}')
             if [ ! -z "${SUBDIR}" ]; then
-              mv "current-dir/${SUBDIR}" current-dir
+              mv "current-site/${SUBDIR}" current-dir
             fi
             # Validate download was successful
             BRANCH_COUNT=$(find current-site -maxdepth 1 -type d -name "branch-*" | wc -l)
