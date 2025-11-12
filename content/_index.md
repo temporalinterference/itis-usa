@@ -45,7 +45,7 @@ About
 {{< /section >}}
 
 {{< card-holder >}}
+{{< card contact >}}
 {{< card mission >}}
 {{< card history >}}
-{{< card contact >}}
 {{< /card-holder >}}
