@@ -7,10 +7,7 @@ build:
 **IT'IS USA**
 The Foundation for Research on Information Technologies in Society USA
 
-IT'IS USA
-227 Bowen Ct.
-Annapolis, MD, 21401
-USA
+IT'IS USA, 227 Bowen Ct., Annapolis, MD, 21401, USA
 
 ??????@itis-usa.org
   
