@@ -4,7 +4,9 @@ id: history
 
 ## Our History
 
-IT'IS USA represents the United States presence of the IT'IS Foundation, building on over 20 years of scientific leadership in bioelectromagnetics research.
+The Foundation for Research on Information Technologies in Society USA, Inc. (IT'IS USA), is a sister organization to the Foundation for Research on Information Technologies in Society (IT'IS) in Zurich, Switzerland. It is a financially and legally independent tax exempt institution based in Maryland, USA.
+
+IT'IS USA was established on May 21, 2010, and held its founding board meeting on October 11, 2010 on the premises of the University of Maryland, College Park, USA.
 
 ### Foundation Origins
 
@@ -35,7 +37,6 @@ IT'IS USA was established to:
 - 5G exposure assessment leadership
 - Machine learning integration
 - Expansion of medical applications
-- IT'IS USA establishment
 
 ### Global Impact
 
