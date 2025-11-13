@@ -32,5 +32,5 @@ IT’IS USA will achieve its mission and strategic goals by stimulating innovati
 * Develop a capital reserve and IPR portfolio to maintain long-term funding.
 
 
-IT’IS USA, established 2010
+IT’IS USA, founded 2010
 
