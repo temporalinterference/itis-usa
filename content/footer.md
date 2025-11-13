@@ -8,8 +8,8 @@ build:
 
 IT'IS USA, 227 Bowen Ct., Annapolis, MD, 21401, USA
 
-??????@itis-usa.org
+????@itis-usa.org
   
 +1 410 990 1039
 
-© 2025 IT'IS USA, All Rights Reserved.
+© 2025 IT'IS USA, all rights reserved
