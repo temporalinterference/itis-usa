@@ -40,6 +40,6 @@ We work closely with:
 
 Our research is supported by government agencies, private foundations, and industry partnerships, ensuring independence and scientific rigor.
 
-{{< modal-image teaser.jpg >}}
+{{< modal-image ITIS-USA-research-1920px.jpg >}}
 {{< /modal-image >}}
 
