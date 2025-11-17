@@ -5,11 +5,11 @@ The Foundation for Research on Information Technologies in Society USA, Inc. (IT
 
 IT'IS USA was established on May 21, 2010, and held its founding board meeting on October 11, 2010 on the premises of the University of Maryland, College Park.
 
-### Foundation Origins
+# Foundation Origins
 
 The IT'IS Foundation was established in 1999 in Zurich, Switzerland, with the mission of assessing the health impact of electromagnetic fields and developing therapeutic applications of this technology.
 
-### Expansion to the USA
+# Expansion to the USA
 
 IT'IS USA was established to:
 - Strengthen collaboration with U.S. research institutions
