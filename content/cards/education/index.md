@@ -1,4 +1,5 @@
 ---
 title: Education
 ---
-Comprehensive training programs, workshops, and educational resources to advance understanding of bioelectromagnetics and foster the next generation of researchers.
+Two funding instruments are available: research fellowships specifically for female applicants, and funding support for research projects for project leaders, postdoctoral fellows.
+
