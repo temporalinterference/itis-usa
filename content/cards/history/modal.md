@@ -19,7 +19,7 @@ IT'IS USA was established to:
 - Engage with U.S. regulatory agencies
 - Support American industry innovation
 - Address region-specific research needs
-- Facilitate standards development in the U.S.
+- Facilitate standards development in the U.S.A
 
 ### Key Milestones
 
@@ -29,6 +29,7 @@ IT'IS USA was established to:
 - Establishment of tissue properties database
 
 **2010s: International Leadership**
+- IT'IS USA established
 - Major contributions to international safety standards
 - Breakthrough medical device safety assessments
 - Advanced in silico clinical trial methods
