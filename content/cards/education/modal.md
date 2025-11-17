@@ -28,6 +28,9 @@ IT'IS USA is committed to education and training in bioelectromagnetics, dosimet
 - Medical device engineers
 - Safety officers
 
+{{< modal-image Education-Katja-Pokovic-Research-Fellowship-1920px.jpg >}}
+{{< /modal-image >}}
+
 ## The Katja Poković Research Fund
 
 ### Purpose
