@@ -48,4 +48,7 @@ About
 {{< card contact >}}
 {{< card mission >}}
 {{< card history >}}
+{{< card board >}}
+{{< card staff >}}
+{{< card jobs >}}
 {{< /card-holder >}}
