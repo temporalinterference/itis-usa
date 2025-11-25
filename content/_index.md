@@ -15,7 +15,7 @@ News
 {{< /section >}}
 
 {{< card-holder >}}
-
+{{< card news-tbc >}}
 {{< /card-holder >}}
 
 {{< section id=activities >}}
