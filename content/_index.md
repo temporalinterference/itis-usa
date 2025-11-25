@@ -15,9 +15,7 @@ News
 {{< /section >}}
 
 {{< card-holder >}}
-{{< card simulation-insights >}}
-{{< card tissue-properties >}}
-{{< card tumor-fitting >}}
+
 {{< /card-holder >}}
 
 {{< section id=activities >}}
