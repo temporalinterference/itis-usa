@@ -8,8 +8,3 @@ From October 13 – 16, 2025, SEAWave partners, including IT’IS and Z43 member
 {{< modal-image News-2025-10-17.jpg >}}
 {{< /modal-image >}}
 SEAWave colleagues gathered in Lyon at the International Agency for Research on Cancer.
-
-At the productive meeting, all inputs were carefully reviewed and discussed to assess whether the current evidence is strong, limited, or insufficient to establish any association between exposure to 5G NR FR1 or FR2 and the development of skin cancer. The final conclusions and detailed discussions will be published soon.
-
-[SeaWave]( https://seawave-project.eu/), is co-funded by the 
-[HORIZON Research and Innovation Actions] (https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en) (Belgium) and the [State Secretariat for Education, Research, and Innovation] (https://www.sbfi.admin.ch/de/sbfi/en/home/research-and-innovation/international-cooperation-r-and-i/eu-framework-programmes-for-research/horizon-europe.html) (SERI, Switzerland). A big thank you to our colleagues at IARC and all SEAWave partners for their inspiring discussions and collaborative work during the workshop!
