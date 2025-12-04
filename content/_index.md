@@ -15,7 +15,6 @@ News
 {{< /section >}}
 
 {{< card-holder >}}
-{{< card news-tbc >}}
 {{< card news-2025-10-17 >}}
 {{< /card-holder >}}
 
