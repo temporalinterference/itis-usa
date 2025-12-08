@@ -15,5 +15,5 @@ navigation:
     - title: About
       href: '#about'
     - title: Contact
-      href: '#contact'
+      href: '#about'
 ---
