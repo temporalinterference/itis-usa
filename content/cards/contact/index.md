@@ -10,4 +10,4 @@ IT'IS USA, 227 Bowen Ct., Annapolis, MD 21401, USA
 
 ---
 
- ??????@itis-usa.org
+ info@itis-usa.org
