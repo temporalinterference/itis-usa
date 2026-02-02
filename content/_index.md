@@ -15,6 +15,7 @@ News
 {{< /section >}}
 
 {{< card-holder >}}
+{{< card news-20260115-MRI-Filter-Solutions >}}
 {{< card news-2025-10-17 >}}
 {{< /card-holder >}}
 
