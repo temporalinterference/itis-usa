@@ -18,6 +18,7 @@ News
 {{< card news-20260115-MRI-Filter-Solutions >}}
 {{< card news-20251110-Computational-Modeling >}}
 {{< card news-20251106-IEC-TC-106-IEEE-ICES-TC34-Meetings-South-Korea >}}
+{{< card news-2025-10-17-SEAWave-Meeting-Lyon >}}
 {{< /card-holder >}}
 
 {{< section id=activities >}}
