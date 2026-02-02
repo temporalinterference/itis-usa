@@ -127,7 +127,7 @@ jobs:
                  --tries=3 \
                  --timeout=30 \
                  "${{ steps.pages.outputs.base_url }}/" \
-                 "${{ steps.pages.outputs.base_url }}/previews.html"
+                 "${{ steps.pages.outputs.base_url }}/previews.html" || true
             SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's{^https?://[^/]+/?}{}')
             if [ ! -z "${SUBDIR}" ]; then
               mv "current-site/${SUBDIR}" current-site-new && rm -rf current-site && mv current-site-new current-site
