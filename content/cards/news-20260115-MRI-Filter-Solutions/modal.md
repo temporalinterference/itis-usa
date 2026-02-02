@@ -12,3 +12,4 @@ For information about the TIBS-R device and the MRI Filter Solutions, please con
 
 {{< modal-image 20260115-MRI-Filter-Solutions-news-item-visual.jpg >}}
 {{< /modal-image >}}
+
