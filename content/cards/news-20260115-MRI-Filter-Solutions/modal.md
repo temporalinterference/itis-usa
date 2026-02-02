@@ -10,6 +10,5 @@ Operation of the system, which supports up to four TI channels (eight electrodes
 These solutions have already been successfully deployed in two leading research laboratories, and additional installations are underway.
 For information about the TIBS-R device and the MRI Filter Solutions, please contact [eap@temporalinterference.com](eap@temporalinterference.com).
 
-{{< modal-image 20260115-MRI-Filter-Solutions-news-item-visual.jpg >}}
-{{< /modal-image >}}
+
 
