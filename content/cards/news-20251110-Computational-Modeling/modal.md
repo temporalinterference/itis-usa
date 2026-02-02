@@ -21,6 +21,10 @@ The scientific and technical impact of the study can be summarized as:
 
 * Understanding the origins and formation of EEG signals could inform the design of recording configurations that maximize the signal information content, e.g., for brain-machine-interfaces
 
+{{< modal-image news-20251110-Computational-Modeling.jpg >}}
+{{< /modal-image >}}
+
 [ACCESS ARTICLE ONLINE](https://www.sciencedirect.com/science/article/pii/S2589004225020541)
+
 
 
