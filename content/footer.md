@@ -12,4 +12,4 @@ info@itis-usa.org
   
 +1 410 990 1039
 
-© 2025 IT'IS USA, all rights reserved
+© 2026 IT'IS USA, all rights reserved
