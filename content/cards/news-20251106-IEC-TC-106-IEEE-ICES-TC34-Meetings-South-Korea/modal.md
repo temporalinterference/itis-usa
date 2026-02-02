@@ -14,5 +14,7 @@ The week also included progress and updates on [IEC/IEEE 62704](https://webstore
 
 Mark Douglas received the [1906 Award](https://www.iec.ch/awards) by the IEC in recognition of exceptional achievements in advancing IEC standards.
 
-Photo
+{{< modal-image news-20251106-IEC-TC-106-IEEE-ICES-TC34-Meetings-South-Korea.jpg >}}
+{{< /modal-image >}}
 *Participants at the IEC TC106 and IEEE ICES TC34 meetings in Busan*
+
