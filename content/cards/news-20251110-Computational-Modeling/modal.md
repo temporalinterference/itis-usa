@@ -3,7 +3,7 @@ id: news-20251110-Computational-Modeling
 ---
 ## Computational Modeling Reveals Biological Mechanisms Underlying the Whisker-Flick EEG (iScience)
 
-# Joseph Tharayil, James B. Isbister, Esra Neufeld, and Michael Reimann, iScience 2025, Volume 28, Issue 11, Article no. 113793, online 06 November 2025; doi: 10.1016/j.isci.2025.113793
+**Joseph Tharayil, James B. Isbister, Esra Neufeld, and Michael Reimann, iScience 2025, Volume 28, Issue 11, Article no. 113793, online 06 November 2025; doi: 10.1016/j.isci.2025.113793**
 
 Whisker flick stimulation is a commonly used protocol to investigate somatosensory processing in rodents. Neural activity evoked by whisker flicks produces a characteristic electroencephalogram (EEG) waveform known as a somatosensory evoked potential (SEP). In this paper, we use computational modeling to make predictions about the neural populations that contribute to this signal, either through their own membrane currents, or the membrane currents they elicit in downstream populations. While the model cannot fully explain the mechanisms of SEP generation, we predict that the initial positive deflection of the EEG waveform is driven largely by direct thalamic inputs to Layer 2/3 and Layer 5 pyramidal cells, while the negative deflection is driven by a more complex mix of sources, including thalamic and recurrent cortical connectivity. Small changes to the local connectivity of the circuit can have an important impact on the recorded EEG, without substantially affecting firing rates, suggesting that EEG may be useful in constraining *in silico* neural models.
 
@@ -22,4 +22,5 @@ The scientific and technical impact of the study can be summarized as:
 * Understanding the origins and formation of EEG signals could inform the design of recording configurations that maximize the signal information content, e.g., for brain-machine-interfaces
 
 [ACCESS ARTICLE ONLINE](https://www.sciencedirect.com/science/article/pii/S2589004225020541)
+
 
