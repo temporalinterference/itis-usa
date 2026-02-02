@@ -9,3 +9,6 @@ The specialized MRI Filter Solutions developed by the IT’IS team for the TIBS-
 Operation of the system, which supports up to four TI channels (eight electrodes), has been validated under normal operating conditions, including sequences with high specific absorption rate (SAR) and high gradient demands. More information is available on the TI Solutions [website](https://temporalinterference.com/).
 These solutions have already been successfully deployed in two leading research laboratories, and additional installations are underway.
 For information about the TIBS-R device and the MRI Filter Solutions, please contact [eap@temporalinterference.com](eap@temporalinterference.com).
+
+{{< modal-image 20260115-MRI-Filter-Solutions-news-item-visual.jpg >}}
+{{< /modal-image >}}
