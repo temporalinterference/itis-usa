@@ -1,3 +1,7 @@
+---
+id: news-20250522-SPARC-FAIR-Codeathon-2025
+---
+## SPARC Seminar Series - In Silico Safety Assessment of Neural Interfaces
 
 Are you ready for a challenge? Submit your project ideas for the interactive 3-day SPARC FAIR Codeathon 2025 happening August 2–4, with US$20,000 in total prizes!
 
