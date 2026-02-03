@@ -17,8 +17,4 @@ Innovation, Science and Economic Development (ISED) Canada presented their lates
  
 Kaitlin O’Keefe of RF Safety Labs presented an overview of the standards, regulatory guidelines, and requirements when using numerical simulations for radiofrequency (RF) exposure evaluation. Numerical evaluation is accepted on a limited basis by the FCC and ISED.
 
-{{< modal-image news-20251025-TCB-Council-Workshop-1.jpg >}}
-{{< /modal-image >}}
 
-{{< modal-image news-20251025-TCB-Council-Workshop-3.jpg >}}
-{{< /modal-image >}}
