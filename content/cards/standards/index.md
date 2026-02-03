@@ -1,4 +1,4 @@
 ---
 title: Standards
 ---
-Active participation in international standards development organizations to ensure science-based safety guidelines for electromagnetic field exposure and medical device safety.
+IT’IS USA participates actively in international standards development organizations to formulate science-based safety guidelines for electromagnetic field exposure and medical device safety to ensure the safety of workers and the public.
