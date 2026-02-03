@@ -20,6 +20,7 @@ News
 {{< card news-20251106-IEC-TC-106-IEEE-ICES-TC34-Meetings-South-Korea >}}
 {{< card news-20251025-TCB-Council-Workshop >}}
 {{< card news-2025-10-17-SEAWave-Meeting-Lyon >}}
+{{< card news-20250904-oSPARC-Year8 >}}
 {{< /card-holder >}}
 
 {{< section id=activities >}}
