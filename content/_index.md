@@ -4,11 +4,19 @@ Description: |
   The Foundation for Research on Information Technologies in Society USA
 ---
 
-{{< banner-image banner.jpg >}}
-
-{{< title claim="The Foundation for Research on Information Technologies in Society USA" >}}
-IT'IS USA
-{{< /title >}}
+{{< banner-text image="2602_itis_usa_web_banner.jpg"
+    title="IT'IS USA"
+    subtitle="The Foundation for Research<br>on Information Technologies<br>in Society USA"
+    titleColor="#a8c8e8"
+    subtitleColor="#ffffff"
+    titleSize="5rem"
+    subtitleSize="1.8rem"
+    align="left"
+    valign="center"
+    padding="8%"
+    maxWidth="55%"
+    italic="true"
+>}}
 
 {{< section id=news >}}
 News

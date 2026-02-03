@@ -1,0 +1,27 @@
+{{- $image := .Get "image" -}}
+{{- $title := .Get "title" | default "" -}}
+{{- $subtitle := .Get "subtitle" | default "" -}}
+{{- $titleColor := .Get "titleColor" | default "#a8c8e8" -}}
+{{- $subtitleColor := .Get "subtitleColor" | default "#ffffff" -}}
+{{- $align := .Get "align" | default "left" -}}
+{{- $valign := .Get "valign" | default "center" -}}
+{{- $padding := .Get "padding" | default "5%" -}}
+{{- $titleSize := .Get "titleSize" | default "4rem" -}}
+{{- $subtitleSize := .Get "subtitleSize" | default "1.5rem" -}}
+{{- $italic := .Get "italic" | default "true" -}}
+{{- $maxWidth := .Get "maxWidth" | default "50%" -}}
+
+{{ partial "banner-text.html" (dict
+    "image" $image
+    "title" $title
+    "subtitle" $subtitle
+    "titleColor" $titleColor
+    "subtitleColor" $subtitleColor
+    "align" $align
+    "valign" $valign
+    "padding" $padding
+    "titleSize" $titleSize
+    "subtitleSize" $subtitleSize
+    "italic" $italic
+    "maxWidth" $maxWidth
+    "Page" .Page) }}

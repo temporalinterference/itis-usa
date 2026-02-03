@@ -115,3 +115,86 @@ body > img:first-of-type,
   display: block;
   margin-top: 0 !important;
 }
+
+/* Banner with text overlay */
+#banner-text-container {
+  margin-top: 0;
+  margin-bottom: 6ex;
+  position: relative;
+
+  .uk-container {
+    padding: 0;
+    max-width: none;
+  }
+}
+
+.ti-banner-text-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ti-banner-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ti-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: var(--banner-padding, 5%);
+  box-sizing: border-box;
+
+  /* Horizontal alignment */
+  align-items: flex-start;
+  &[style*="--banner-align: center"] {
+    align-items: center;
+  }
+  &[style*="--banner-align: right"] {
+    align-items: flex-end;
+  }
+
+  /* Vertical alignment */
+  justify-content: center;
+  &[style*="--banner-valign: top"] {
+    justify-content: flex-start;
+  }
+  &[style*="--banner-valign: bottom"] {
+    justify-content: flex-end;
+  }
+}
+
+.ti-banner-title {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: var(--banner-title-size, 4rem);
+  font-style: var(--banner-font-style, italic);
+  font-weight: 300;
+  color: var(--banner-title-color, #a8c8e8);
+  line-height: 1.1;
+  max-width: var(--banner-max-width, 50%);
+  margin-bottom: 0.3em;
+
+  @media (max-width: 768px) {
+    font-size: calc(var(--banner-title-size, 4rem) * 0.5);
+  }
+}
+
+.ti-banner-subtitle {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: var(--banner-subtitle-size, 1.5rem);
+  font-style: var(--banner-font-style, italic);
+  font-weight: 300;
+  color: var(--banner-subtitle-color, #ffffff);
+  line-height: 1.3;
+  max-width: var(--banner-max-width, 50%);
+
+  @media (max-width: 768px) {
+    font-size: calc(var(--banner-subtitle-size, 1.5rem) * 0.7);
+  }
+}
