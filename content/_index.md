@@ -18,6 +18,7 @@ News
 {{< card news-20260115-MRI-Filter-Solutions >}}
 {{< card news-20251110-Computational-Modeling >}}
 {{< card news-20251106-IEC-TC-106-IEEE-ICES-TC34-Meetings-South-Korea >}}
+{{< card news-20251025-TCB-Council-Workshop >}}
 {{< card news-2025-10-17-SEAWave-Meeting-Lyon >}}
 {{< /card-holder >}}
 
@@ -31,16 +32,6 @@ Activities
 {{< card education >}}
 {{< /card-holder >}}
 
-{{< section id=publications >}}
-Selected Publications
-{{< /section >}}
-
-{{< card-holder >}}
-{{< card publication-1 >}}
-{{< card publication-2 >}}
-{{< card publication-3 >}}
-{{< /card-holder >}}
-
 {{< section id=about >}}
 About
 {{< /section >}}
@@ -50,6 +41,4 @@ About
 {{< card mission >}}
 {{< card history >}}
 {{< card the-board >}}
-{{< card staff >}}
-{{< card jobs >}}
 {{< /card-holder >}}
