@@ -152,21 +152,9 @@ body > img:first-of-type,
 
   /* Horizontal alignment */
   align-items: flex-start;
-  &[style*="--banner-align: center"] {
-    align-items: center;
-  }
-  &[style*="--banner-align: right"] {
-    align-items: flex-end;
-  }
 
   /* Vertical alignment */
-  justify-content: center;
-  &[style*="--banner-valign: top"] {
-    justify-content: flex-start;
-  }
-  &[style*="--banner-valign: bottom"] {
-    justify-content: flex-end;
-  }
+  justify-content: flex-end;
 }
 
 .ti-banner-title {
@@ -194,7 +182,7 @@ body > img:first-of-type,
   font-weight: 400;
   color: var(--banner-subtitle-color, #ffffff);
   line-height: 1.1;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.1em;
   max-width: var(--banner-max-width, 50%);
 
   @media (max-width: 768px) {

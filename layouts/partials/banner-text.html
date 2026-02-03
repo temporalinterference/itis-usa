@@ -12,16 +12,14 @@
             {{- end -}}
 
             <div class="ti-banner-overlay"
-                 style="--banner-align: {{ .align }};
-                        --banner-valign: {{ .valign }};
-                        --banner-padding: {{ .padding }};
+                 style="--banner-padding: {{ .padding }};
                         --banner-title-gradient-start: {{ .titleGradientStart }};
                         --banner-title-gradient-end: {{ .titleGradientEnd }};
                         --banner-subtitle-color: {{ .subtitleColor }};
                         --banner-title-size: {{ .titleSize }};
                         --banner-subtitle-size: {{ .subtitleSize }};
                         --banner-max-width: {{ .maxWidth }};
-                        {{ if eq .italic "true" }}--banner-font-style: italic;{{ else }}--banner-font-style: normal;{{ end }}">
+                        --banner-font-style: italic;">
                 {{- if .title -}}
                 <div class="ti-banner-title">{{ .title | safeHTML }}</div>
                 {{- end -}}
