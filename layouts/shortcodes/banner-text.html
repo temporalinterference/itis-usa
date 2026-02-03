@@ -1,7 +1,8 @@
 {{- $image := .Get "image" -}}
 {{- $title := .Get "title" | default "" -}}
 {{- $subtitle := .Get "subtitle" | default "" -}}
-{{- $titleColor := .Get "titleColor" | default "#a8c8e8" -}}
+{{- $titleGradientStart := .Get "titleGradientStart" | default "#a8c8e8" -}}
+{{- $titleGradientEnd := .Get "titleGradientEnd" | default "#ffffff" -}}
 {{- $subtitleColor := .Get "subtitleColor" | default "#ffffff" -}}
 {{- $align := .Get "align" | default "left" -}}
 {{- $valign := .Get "valign" | default "center" -}}
@@ -15,7 +16,8 @@
     "image" $image
     "title" $title
     "subtitle" $subtitle
-    "titleColor" $titleColor
+    "titleGradientStart" $titleGradientStart
+    "titleGradientEnd" $titleGradientEnd
     "subtitleColor" $subtitleColor
     "align" $align
     "valign" $valign
