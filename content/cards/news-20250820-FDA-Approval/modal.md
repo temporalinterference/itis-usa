@@ -24,9 +24,10 @@ To support the magnetic resonance imaging (MRI) compatibility of the SetPoint Sy
 
 * related the measured test responses to conservative in vivo levels with the [FDA-qualified Medical Device Development Tool, IMAnalytics with MRIxViP and BCLib](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.fda.gov/media/148922/download), to estimate the electric fields incident to the Implant for all MR exposure scenarios (MR system settings, anatomical phantoms, body coils and imaging landmarks);
 
-* * and performed MR scanner tests with partner [GyroTools LLC](https://www.gyrotools.com/gt/index.php/courses/mri-safety-testing), including image artifact assessment per ASTM F2119.
+* and performed MR scanner tests with partner [GyroTools LLC](https://www.gyrotools.com/gt/index.php/courses/mri-safety-testing), including image artifact assessment per ASTM F2119.
  
 The SetPoint System is an example of the application of neurostimulation to modulate inflammation, which plays a key role in autoimmune diseases. SetPoint is also planning to evaluate its platform for treatment of additional autoimmune indications, including multiple sclerosis and Crohn’s disease. We are looking forward to future collaborations!
+
 
 
 
