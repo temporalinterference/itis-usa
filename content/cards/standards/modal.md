@@ -4,7 +4,7 @@ id: standards
 
 ## Standards Development Activities
 
-IT'IS USA plays a vital role in developing science-based safety standards and guidelines for electromagnetic field exposure.
+IT'IS USA plays a vital role in developing science-based safety standards and guidelines for exposure to electromagnetic fields.
 
 ### Active Participation
 
@@ -14,7 +14,7 @@ IT'IS USA plays a vital role in developing science-based safety standards and gu
 - International Electrotechnical Commission (IEC)
 - Federal Communications Commission (FCC) advisory groups
 
-**Standards We Contribute To**
+**Our Contributions to Electromagnetic Safety**
 - Human exposure limits for radiofrequency fields
 - Medical device safety standards
 - Testing and measurement protocols
@@ -22,15 +22,15 @@ IT'IS USA plays a vital role in developing science-based safety standards and gu
 
 ### Approach
 
-Our standards work is:
+Our standards contributions are:
 - Based on rigorous scientific evidence
 - Transparent and inclusive
-- Regularly updated with latest research
-- Protective of public health
+- Regularly updated on teh bisi of the latest research
+- Formulated to protect the health workers and of the public 
 
 ### Impact
 
-Standards we help develop are:
+The standards that we help develop are:
 - Adopted by regulatory agencies worldwide
 - Used by manufacturers for product design
 - Referenced in legal and policy frameworks
