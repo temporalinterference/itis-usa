@@ -13,4 +13,6 @@ Sustaining o²S²PARC’s longevity beyond the scheduled end of the program also
 
 We are very grateful for the continued support from the NIH Common Fund and the opportunity to further expand our o²S²PARC platform.
 
+{{< modal-image news-20250904-oSPARC-Year8.jpg >}}
+{{< /modal-image >}}
 
