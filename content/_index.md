@@ -24,7 +24,7 @@ News
 {{< /section >}}
 
 {{< card-holder >}}
-{{< card news-20260204-Esra-on-Board >}}
+{{< card news-20260204-Esra-on-board >}}
 {{< card news-20260115-MRI-Filter-Solutions >}}
 {{< card news-20251110-Computational-Modeling >}}
 {{< card news-20251106-IEC-TC-106-IEEE-ICES-TC34-Meetings-South-Korea >}}
