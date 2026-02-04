@@ -17,5 +17,7 @@ The week concluded with progress on [IEC/IEEE 62704](https://www.iec.ch/dyn/www
 
 A big thank you to all participants for an inspiring week of insightful discussions!
 
-
+{{< modal-image news-20250228-IEC-TC106-in-Zurich.jpg >}}
+{{< /modal-image >}}
 *Participants of the IEC/IEEE 62209-5 meetings enjoying the view from the meeting room at Mount Pilatus.*
+
