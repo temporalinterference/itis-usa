@@ -19,5 +19,7 @@ as well as information on:
 * Selected partners and sponsors
 
 Download Annual Report
-{{< modal-download ITIS-Annual-Report-2024.pdf >}}Download Annual Report{{< /modal-download >}}
+{{< modal-download ITIS-Annual-Report-2024.pdf >}}Download Annual Report.{{< /modal-download >}}
+
+
 
