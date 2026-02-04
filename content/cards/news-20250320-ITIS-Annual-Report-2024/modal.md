@@ -1,8 +1,7 @@
 ---
-title: IT'IS Annual Report 2024
+id: news-20250320-ITIS-Annual-Report-2024
 ---
-
-March 20, 2025
+## IT'IS Annual Report 2024
 
 We are proud to publish the IT'IS Foundation’s 2024 Annual Report! This year’s edition highlights include:
 
@@ -20,3 +19,4 @@ as well as information on:
 * Selected partners and sponsors
 
 Download Annual Report
+
