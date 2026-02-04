@@ -4,18 +4,21 @@ id: research
 
 ## Research Activities
 
-IT'IS USA is at the forefront of research into the interaction between electromagnetic fields and biological systems.
+IT'IS USA is at the forefront of research into the interactions between electromagnetic fields (EMF) and biological systems.
 
 ### Focus Areas
 
 **Computational Bioelectromagnetics**
-* Advanced modeling of field interactions with tissues
-* Multi-scale simulation from molecular to organ level
+* Advanced modeling of the interactions of EMF with tissues
+* Multi-scale simulations from molecular to organ level
 * Development of anatomically accurate computational models
 
 **Medical Applications**
-* Therapeutic applications of electromagnetic fields
-* Medical device safety assessment
+* Therapeutic applications of EMF
+* Temporal interference stimulation (TIS)
+* Safety assessment of magnetic resonance imaging (MRI) protocols
+* Safety assessment of medical devices, especially in the context of MRI scanning
+* Hyperthermia 
 * Treatment planning optimization
 
 **Dosimetry and Exposure Assessment**
@@ -26,7 +29,7 @@ IT'IS USA is at the forefront of research into the interaction between electroma
 **Safety Standards Development**
 * Scientific basis for exposure guidelines
 * Risk assessment methodologies
-* Testing protocol development
+* Development of testing protocols for wireless devices  
 
 ### Collaborations
 
