@@ -11,20 +11,10 @@
                 {{- end -}}
             {{- end -}}
 
-            <div class="ti-banner-overlay"
-                 style="--banner-padding: {{ .padding }};
-                        --banner-title-gradient-start: {{ .titleGradientStart }};
-                        --banner-title-gradient-end: {{ .titleGradientEnd }};
-                        --banner-subtitle-color: {{ .subtitleColor }};
-                        --banner-title-size: {{ .titleSize }};
-                        --banner-subtitle-size: {{ .subtitleSize }};
-                        --banner-max-width: {{ .maxWidth }};
-                        --banner-font-style: italic;">
-                {{- if .title -}}
-                <div class="ti-banner-title">{{ .title | safeHTML }}</div>
-                {{- end -}}
+            <div class="ti-banner-overlay">
+                <div class="ti-banner-title">IT'IS USA</div>
                 {{- if .subtitle -}}
-                <div class="ti-banner-subtitle">{{ .subtitle | safeHTML }}</div>
+                <div class="ti-banner-subtitle">{{ .subtitle }}</div>
                 {{- end -}}
             </div>
         </div>

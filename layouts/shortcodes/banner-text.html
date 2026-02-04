@@ -1,23 +1,7 @@
 {{- $image := .Get "image" -}}
-{{- $title := .Get "title" | default "" -}}
-{{- $subtitle := .Get "subtitle" | default "" -}}
-{{- $titleGradientStart := .Get "titleGradientStart" | default "#a8c8e8" -}}
-{{- $titleGradientEnd := .Get "titleGradientEnd" | default "#ffffff" -}}
-{{- $subtitleColor := .Get "subtitleColor" | default "#ffffff" -}}
-{{- $padding := .Get "padding" | default "5%" -}}
-{{- $titleSize := .Get "titleSize" | default "4rem" -}}
-{{- $subtitleSize := .Get "subtitleSize" | default "1.5rem" -}}
-{{- $maxWidth := .Get "maxWidth" | default "50%" -}}
+{{- $subtitle := .Inner | strings.TrimSpace | replaceRE "\n" "<br>" | safeHTML -}}
 
 {{ partial "banner-text.html" (dict
     "image" $image
-    "title" $title
     "subtitle" $subtitle
-    "titleGradientStart" $titleGradientStart
-    "titleGradientEnd" $titleGradientEnd
-    "subtitleColor" $subtitleColor
-    "padding" $padding
-    "titleSize" $titleSize
-    "subtitleSize" $subtitleSize
-    "maxWidth" $maxWidth
     "Page" .Page) }}
