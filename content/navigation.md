@@ -10,8 +10,6 @@ navigation:
       href: '#news'
     - title: Activities
       href: '#activities'
-    - title: Publications
-      href: '#publications'
     - title: About
       href: '#about'
     - title: Contact
