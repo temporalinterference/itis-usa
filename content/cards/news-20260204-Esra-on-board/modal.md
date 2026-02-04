@@ -1,5 +1,5 @@
 ---
-id: news-20260204-Esra-on-Board
+id: news-20260204-Esra-on-board
 ---
 ## Esra on Board
 
