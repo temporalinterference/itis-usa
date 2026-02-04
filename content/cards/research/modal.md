@@ -34,7 +34,8 @@ IT'IS USA is at the forefront of research into the interactions between electrom
 ### Collaborations
 
 We work closely with:
-* Leading research universities
+* Our Swiss partners: [IT'IS](https://itis.swiss/), [Schmid and Partner Engineering AG](https://speag.swiss/), [ZMT Zurich MedTech AG](https://zmt.swiss/), and [TI Solutions AG](https://temporalinterference.com/)
+* Leading research universities worldwide
 * Medical institutions
 * Industry partners
 * Regulatory agencies worldwide
