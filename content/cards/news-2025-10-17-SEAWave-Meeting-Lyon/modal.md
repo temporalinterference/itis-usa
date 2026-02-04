@@ -9,9 +9,10 @@ From October 13 – 16, 2025, SEAWave partners, including IT’IS and Z43 member
 {{< /modal-image >}}
 SEAWave colleagues gathered in Lyon at the International Agency for Research on Cancer.
 
-At the productive meeting, all inputs were carefully reviewed and discussed to assess whether the current evidence is strong, limited, or insufficient to establish any association between exposure to 5G NR FR1 or FR2 and the development of skin cancer. The final conclusions and detailed discussions will be published soon.
+At the productive meeting, all inputs were carefully reviewed and discussed to assess whether the current evidence is strong, limited, or insufficient to establish any association between exposure to 5G NR FR1 or FR2 and the development of skin cancer. SEAWave's External Advisory Board, made up of Dr. Clemens Dasenbrock – formerly of the Fraunhofer Institute for Toxicology and Experimental Medicine in Hannover, Germany – and Ron Melnick, who served as a toxicologist at the National Institute of Environmental Health Sciences (NIEHS) and the National Toxicology Program (NTP)in Durham NC, USA – provided expert guidance to ensure that the project was executed according to plan and within EU guidelines. The final conclusions and detailed discussions will be published soon.
 
-[SeaWave](https://seawave-project.eu/), is co-funded by the 
+[SEAWave](https://seawave-project.eu/), is co-funded by the 
 [HORIZON Research and Innovation Actions](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en) (Belgium) and the [State Secretariat for Education, Research, and Innovation](https://www.sbfi.admin.ch/de/sbfi/en/home/research-and-innovation/international-cooperation-r-and-i/eu-framework-programmes-for-research/horizon-europe.html) (SERI, Switzerland). A big thank you to our colleagues at IARC and all SEAWave partners for their inspiring discussions and collaborative work during the workshop!
+
 
 
