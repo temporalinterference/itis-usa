@@ -36,6 +36,7 @@ News
 {{< card news-20250522-SPARC-FAIR-Codeathon-2025 >}}
 {{< card news-20250604-IEC-TC-106-IEEE-ICES-TC34-Mexico >}}
 {{< card news-20250410-Special-Issue-on-Neurostimulation >}}
+{{< card news-20250228-IEC-TC106-in-Zurich >}}
 {{< /card-holder >}}
 
 {{< section id=activities >}}
