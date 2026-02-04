@@ -23,7 +23,7 @@ IT’IS USA will achieve its mission and strategic goals by stimulating innovati
 
 # Implementation Plan
 
-* Acquire consistent and primary funding from donors, sponsors, government agencies, and other foundations; funds for projects with non-disclosure agreement restrictions may be accepted where there is a potential for new research areas with no NDA restrictions or to support other projects.
+* Acquire consistent and primary funding from donors, sponsors, government agencies, and other foundations; funds for projects with non-disclosure agreement (NDA) restrictions may be accepted where there is a potential for new research areas with no NDA restrictions or to support other projects.
 * Consistently acquire a majority of scientifically interesting exposure and dosimetry assessment projects to maintain leadership in these vital technologies
 * Actively participate in international organizations that develop standards for radiofrequency (RF) safety so as to provide the expertise of IT’IS as a center of excellence and knowledge nationally and internationally for the safe use of RF and microwave energy
 * Disseminate knowledge to experts, media, and the general public through publications and participation in and organization of conferences, seminars, and workshops
