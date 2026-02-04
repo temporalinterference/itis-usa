@@ -4,7 +4,7 @@ id: history
 
 ## Our History
 
-The Foundation for Research on Information Technologies in Society USA, Inc. (IT'IS USA), is a sister organization of the Foundation for Research on Information Technologies in Society ([IT'IS CH](https://itis.swiss/)) in Zurich, Switzerland. It is a financially and legally independent tax-exempt institution based in Maryland, USA.
+The Foundation for Research on Information Technologies in Society USA, Inc. (IT'IS USA), is a sister organization of the Foundation for Research on Information Technologies in Society ([IT'IS](https://itis.swiss/)) in Zurich, Switzerland. It is a financially and legally independent tax-exempt institution based in Maryland, USA.
 
 IT'IS USA was established on May 21, 2010, and held its founding board meeting on October 11, 2010 on the campus of the University of Maryland, College Park MD, USA.
 
