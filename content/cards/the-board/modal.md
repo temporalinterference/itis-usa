@@ -16,7 +16,8 @@ Dr. Esra Neufeld (CSO) is Associate Director of the Foundation for Research on I
 {{< /image-text >}}
 
 {{< image-text title="Gal Shafirstein" src="Gal-Shafirstein-500px.jpg" pos="left" >}}
-Dr. Gal Shafirstein is the head of translational and clinical research on photodynamic therapy (PDT) at Roswell Park Comprehensive Cancer Center. The focus of his research is on light dosimetry for interstitial and intraoperative PDT and treatment planning to improve outcomes for patients with advanced head and neck or lung cancers who have not responded to standard therapies. He is a principal investigator/project leader on several grants funded by the National Institutes of Health. He is the co-inventor on 8 patents and has co-authored 79 peer reviewed scientific papers. Dr. Shafirstein is a frequent invited speaker whose honors include the Lyon New Scientist Development Award, multiple Technion awards for excellence (Presidential Scholarship, Shenkar Prize, Gutwirth Prize, academic distinction), and the national Landau Prize for distinction in research.{{< /image-text >}}
+Dr. Gal Shafirstein is the head of translational and clinical research on photodynamic therapy (PDT) at Roswell Park Comprehensive Cancer Center. The focus of his research is on light dosimetry for interstitial and intraoperative PDT and treatment planning to improve outcomes for patients with advanced head and neck or lung cancers who have not responded to standard therapies. He is a principal investigator/project leader on several grants funded by the National Institutes of Health. He is the co-inventor on 8 patents and has co-authored 79 peer reviewed scientific papers. Dr. Shafirstein is a frequent invited speaker whose honors include the Lyon New Scientist Development Award, several Technion awards for excellence, and the national Landau Prize for distinction in research.{{< /image-text >}}
+
 
 
 
