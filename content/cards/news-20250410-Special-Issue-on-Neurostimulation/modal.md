@@ -33,3 +33,4 @@ This Special Issue includes the following topics:
 The guest editors were [Prof. Alvaro Pascual-Leone](https://mbb.harvard.edu/people/alvaro-pascual-leone) from Harvard Medical School, a prominent opinion leader in neuromodulation, and [Dr. Esra Neufeld](https://itis.swiss/who-we-are/staff-members/project-leaders/esra-neufeld/) of the IT’IS Foundation, a leading expert in computational neuromodeling.
 
 The Special Issue can be accessed [here](https://onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1521-186X.Neurostimulation).
+
