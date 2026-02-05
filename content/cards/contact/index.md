@@ -2,7 +2,10 @@
 title: Contact Us
 ---
 
-IT'IS USA, 227 Bowen Ct., Annapolis, MD 21401, USA
+IT'IS USA
+227 Bowen Ct.
+Annapolis, MD 21401
+USA
 
 ---
 

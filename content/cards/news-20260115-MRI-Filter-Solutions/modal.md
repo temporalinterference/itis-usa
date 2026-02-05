@@ -3,7 +3,7 @@ id: news-20260115-MRI-Filter-Solutions
 ---
 ## MRI Filter Solutions for Temporal Interference Stimulation
 
-The IT’IS team has successfully installed their 3.0 T and 7.0 T Filter Solutions in two leading research laboratories, enabling functional magnetic resonance imaging to be performed concurrently during temporal interference stimulation with the TIBS-R device.
+The TI team (IT’IS Switzerland) has successfully installed their 3.0 T and 7.0 T Filter Solutions in two leading research laboratories, enabling functional magnetic resonance imaging to be performed concurrently during temporal interference stimulation with the TIBS-R device.
 
 The ability to perform functional magnetic resonance imaging (fMRI) concurrently during temporal interference stimulation (TIS) is essential to further advance the understanding of and to evaluate the potential of TIS. However, introducing devices into the MRI environment is generally unsafe unless they are specifically designed to meet MRI safety requirements.
 

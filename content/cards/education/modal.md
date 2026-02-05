@@ -3,7 +3,7 @@ id: education
 ---
 ## Educational Programs
 
-IT’IS USA is is an independent, non-profit, tax-exempt research institute committed to education and training in bioelectromagnetics, computational life and health sciences, dosimetry, and related fields. As part of its education mission, IT'IS conducts research in simulation methodologies and applications of physical, physiological, and biological processes to advance the realization of precision medicine, participating in *in silico* studies that include clinical trials and regulatory grade modeling, with focus on validation and verification methods. IT’IS USA and its Swiss partners are committed to providing a proactive, creative, and innovative research environment for the cultivation of sound science and good education.
+IT’IS USA is an independent, non-profit, tax-exempt research institute committed to education and training in bioelectromagnetics, computational life and health sciences, dosimetry, and related fields. As part of its education mission, IT'IS conducts research in simulation methodologies and applications of physical, physiological, and biological processes to advance the realization of precision medicine, participating in *in silico* studies that include clinical trials and regulatory grade modeling, with focus on validation and verification methods. IT’IS USA and its Swiss sister organization are committed to providing a proactive, creative, and innovative research environment for the cultivation of sound science and good education.
 
 ### Programs Offered
 **Online Resources**
