@@ -1,6 +1,24 @@
-name: Deploy Hugo site to Pages
-# This is a reusable workflow for deploying Hugo sites with branch previews
-# Copy this file to your site's .github/workflows/ directory
+name: Deploy Hugo site
+# Dual-target deployment: rsync (SSH) or GitHub Pages
+#
+# Auto-detection:
+#   - Set the SSH_HOST repository secret to enable rsync deployment
+#   - Leave SSH_HOST unset to deploy via GitHub Pages
+#
+# Required secrets for rsync target:
+#   SSH_KEY  — ed25519 private key
+#   SSH_USER — remote username
+#   SSH_HOST — remote hostname (also serves as the toggle)
+#   SSH_PORT — SSH port
+#   SITE_URL — site base URL (e.g. https://example.com)
+#
+# For GitHub Pages target:
+#   SITE_URL — optional (falls back to configure-pages output)
+#
+# Server-side rsync setup:
+#   The remote uses restricted rsync-over-SSH (command= in authorized_keys).
+#   No shell access, but rsync works both directions (push and pull).
+#   Deploy destination: public_html/
 
 on:
   push:
@@ -53,6 +71,8 @@ jobs:
     # Skip if this is a push to a branch that has an active PR
     if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || needs.check-pr.outputs.has_pr != 'true'
     runs-on: ubuntu-latest
+    outputs:
+      deploy_target: ${{ steps.deploy-target.outputs.target }}
     env:
       DART_SASS_VERSION: 1.93.2
     steps:
@@ -71,6 +91,7 @@ jobs:
         with:
           cache: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install Dart Sass
         run: |
           curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
@@ -85,62 +106,6 @@ jobs:
 
           # Initialize theme UIKit dependency using the theme's init script
           bash "$(hugo config mounts | jq -rs '.[] | select(.path | contains("z43-cards-theme")) | .dir')/init-theme.sh"
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
-      - name: Download previous site
-        id: download
-        uses: dawidd6/action-download-artifact@v6
-        with:
-          workflow: deploy-hugo.yaml
-          name: github-pages
-          path: current-site
-          if_no_artifact_found: ignore
-        continue-on-error: true
-
-      - name: Prepare site directory
-        run: |
-          set -x
-          mkdir -p current-site
-
-          if [ -f current-site/artifact.tar ]; then
-            tar xf current-site/artifact.tar -C current-site
-            rm current-site/artifact.tar
-            echo "Extracted site from artifact"
-          elif [ "${{ github.event_name }}" != "push" ] || [ "${{ github.ref }}" != "refs/heads/main" ]; then
-            # If no artifact and not a push to main branch, download from live site
-            echo "No artifact found, downloading from live site: ${{ steps.pages.outputs.base_url }}"
-
-            # Use wget to mirror the live site
-            # Include both the main index and previews.html to discover all branch previews
-            # Must use --execute robots=off because robots.txt blocks /branch-* paths
-            wget --recursive \
-                 --level=inf \
-                 --no-parent \
-                 --no-host-directories \
-                 --quiet \
-                 --directory-prefix=current-site \
-                 --page-requisites \
-                 --execute robots=off \
-                 --tries=3 \
-                 --timeout=30 \
-                 "${{ steps.pages.outputs.base_url }}/" \
-                 "${{ steps.pages.outputs.base_url }}/previews.html" || true
-            SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's{^https?://[^/]+/?}{}')
-            if [ ! -z "${SUBDIR}" ]; then
-              mv "current-site/${SUBDIR}" current-site-new && rm -rf current-site && mv current-site-new current-site
-            fi
-            # Validate download was successful
-            BRANCH_COUNT=$(find current-site -maxdepth 1 -type d -name "branch-*" | wc -l)
-            if [ ! -f current-site/index.html ] && [ "$BRANCH_COUNT" -eq 0 ]; then
-              echo "Error: Failed to download existing site - no index.html or branch directories found"
-              exit 1
-            fi
-
-            echo "Successfully downloaded existing site (found index.html or $BRANCH_COUNT branch directories)"
-          fi
 
       # For fork PRs, verify the contents are safe
       - name: Verify fork PR
@@ -218,7 +183,108 @@ jobs:
 
           echo "Security checks passed!"
 
-      - name: Build with Hugo
+      - name: Determine deploy target
+        id: deploy-target
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: |
+          if [ -n "$SSH_HOST" ]; then
+            echo "target=rsync" >> $GITHUB_OUTPUT
+            echo "base_url=${SITE_URL}" >> $GITHUB_OUTPUT
+          else
+            echo "target=pages" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Setup SSH
+        if: steps.deploy-target.outputs.target == 'rsync'
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Setup Pages
+        id: pages
+        if: steps.deploy-target.outputs.target == 'pages'
+        uses: actions/configure-pages@v5
+
+      - name: Download previous site
+        if: steps.deploy-target.outputs.target == 'pages'
+        id: download
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: deploy-hugo.yaml
+          name: github-pages
+          path: current-site
+          if_no_artifact_found: ignore
+        continue-on-error: true
+
+      - name: Prepare site directory
+        if: steps.deploy-target.outputs.target == 'pages'
+        run: |
+          set -x
+          mkdir -p current-site
+
+          if [ -f current-site/artifact.tar ]; then
+            tar xf current-site/artifact.tar -C current-site
+            rm current-site/artifact.tar
+            echo "Extracted site from artifact"
+          elif [ "${{ github.event_name }}" != "push" ] || [ "${{ github.ref }}" != "refs/heads/main" ]; then
+            # If no artifact and not a push to main branch, download from live site
+            echo "No artifact found, downloading from live site: ${{ steps.pages.outputs.base_url }}"
+
+            # Use wget to mirror the live site
+            # Include both the main index and previews.html to discover all branch previews
+            # Must use --execute robots=off because robots.txt blocks /branch-* paths
+            wget --recursive \
+                 --level=inf \
+                 --no-parent \
+                 --no-host-directories \
+                 --quiet \
+                 --directory-prefix=current-site \
+                 --page-requisites \
+                 --execute robots=off \
+                 --tries=3 \
+                 --timeout=30 \
+                 "${{ steps.pages.outputs.base_url }}/" \
+                 "${{ steps.pages.outputs.base_url }}/previews.html" || true
+            SUBDIR=$(echo "${{ steps.pages.outputs.base_url }}" | perl -pe 's{^https?://[^/]+/?}{}')
+            if [ ! -z "${SUBDIR}" ]; then
+              mv "current-site/${SUBDIR}" current-site-new && rm -rf current-site && mv current-site-new current-site
+            fi
+            # Validate download was successful
+            BRANCH_COUNT=$(find current-site -maxdepth 1 -type d -name "branch-*" | wc -l)
+            if [ ! -f current-site/index.html ] && [ "$BRANCH_COUNT" -eq 0 ]; then
+              echo "Error: Failed to download existing site - no index.html or branch directories found"
+              exit 1
+            fi
+
+            echo "Successfully downloaded existing site (found index.html or $BRANCH_COUNT branch directories)"
+          fi
+
+      - name: Build with Hugo (rsync)
+        if: steps.deploy-target.outputs.target == 'rsync'
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: |
+          # Determine branch name based on event type
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="${{ github.head_ref }}"
+          else
+            BRANCH="${GITHUB_REF#refs/heads/}"
+          fi
+
+          if [ "$BRANCH" = "main" ]; then
+            hugo --minify --baseURL "${SITE_URL}/"
+          else
+            hugo --minify --baseURL "${SITE_URL}/branch-${BRANCH}/"
+          fi
+
+      - name: Build with Hugo (pages)
+        if: steps.deploy-target.outputs.target == 'pages'
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
@@ -251,7 +317,101 @@ jobs:
             cp -r public/* current-site/branch-${BRANCH}/
           fi
 
-      - name: Generate preview index
+      - name: Deploy via rsync
+        if: steps.deploy-target.outputs.target == 'rsync'
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+        run: |
+          # Determine branch name based on event type
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="${{ github.head_ref }}"
+          else
+            BRANCH="${GITHUB_REF#refs/heads/}"
+          fi
+
+          SSH_CMD="ssh -i ~/.ssh/deploy_key -p ${SSH_PORT}"
+
+          if [ "$BRANCH" = "main" ]; then
+            rsync -avz --delete \
+              --exclude='branch-*' \
+              --exclude='previews.html' \
+              --exclude='robots.txt' \
+              -e "$SSH_CMD" \
+              public/ "${SSH_USER}@${SSH_HOST}:public_html/"
+          else
+            rsync -avz --delete \
+              -e "$SSH_CMD" \
+              public/ "${SSH_USER}@${SSH_HOST}:public_html/branch-${BRANCH}/"
+          fi
+
+      - name: Update previews and robots (rsync)
+        if: steps.deploy-target.outputs.target == 'rsync'
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: |
+          SSH_CMD="ssh -i ~/.ssh/deploy_key -p ${SSH_PORT}"
+
+          # Pull branch-* directory listing from remote
+          mkdir -p remote-branches
+          rsync -avz \
+            --include='branch-*/' \
+            --exclude='*' \
+            -e "$SSH_CMD" \
+            "${SSH_USER}@${SSH_HOST}:public_html/" remote-branches/
+
+          # Generate previews.html locally
+          cat > previews.html << 'HTMLEOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Branch Previews</title>
+              <meta name="robots" content="noindex,nofollow">
+              <meta name="googlebot" content="noindex,nofollow">
+              <style>
+                body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+                .preview-list { list-style: none; padding: 0; }
+                .preview-list li { margin: 10px 0; padding: 10px; border: 1px solid #eee; border-radius: 4px; }
+                .preview-type { font-weight: bold; margin-right: 10px; }
+                a { color: #0366d6; text-decoration: none; }
+                a:hover { text-decoration: underline; }
+              </style>
+          </head>
+          <body>
+          <h1>Branch Previews</h1>
+          <ul class="preview-list">
+          HTMLEOF
+
+          for branch_dir in remote-branches/branch-*/; do
+            if [ -d "$branch_dir" ]; then
+              branch_name=$(basename "$branch_dir" | sed 's/branch-//')
+              echo "<li><span class='preview-type'>Branch:</span><a href='branch-${branch_name}/'>${branch_name}</a></li>" >> previews.html
+            fi
+          done
+
+          cat >> previews.html << HTMLEOF
+          </ul>
+          <p>Last updated: $(date)</p>
+          </body></html>
+          HTMLEOF
+
+          # Generate robots.txt locally
+          cat > robots.txt << 'ROBOTSEOF'
+          User-agent: *
+          Disallow: /branch-
+          ROBOTSEOF
+
+          # Push both files to remote
+          rsync -avz \
+            -e "$SSH_CMD" \
+            previews.html robots.txt "${SSH_USER}@${SSH_HOST}:public_html/"
+
+      - name: Generate preview index (pages)
+        if: steps.deploy-target.outputs.target == 'pages'
         run: |
           cat > current-site/previews.html << 'EOL'
           <!DOCTYPE html>
@@ -287,7 +447,8 @@ jobs:
           </body></html>
           EOL
 
-      - name: Add robots.txt
+      - name: Add robots.txt (pages)
+        if: steps.deploy-target.outputs.target == 'pages'
         run: |
           cat > current-site/robots.txt << 'EOL'
           User-agent: *
@@ -302,13 +463,14 @@ jobs:
           body: |
             🚀 Branch preview deployed!
 
-            You can view your changes at: ${{ steps.pages.outputs.base_url }}/branch-${{ github.head_ref }}/
+            You can view your changes at: ${{ steps.deploy-target.outputs.base_url || steps.pages.outputs.base_url }}/branch-${{ github.head_ref }}/
 
-            View all branch previews at: ${{ steps.pages.outputs.base_url }}/previews.html
+            View all branch previews at: ${{ steps.deploy-target.outputs.base_url || steps.pages.outputs.base_url }}/previews.html
 
             ${{ github.event.pull_request.head.repo.full_name != github.repository && '⚠️ Note: This PR is from a fork. Additional security checks were performed.' || '' }}
 
-      - name: Upload artifact
+      - name: Upload artifact (pages)
+        if: steps.deploy-target.outputs.target == 'pages'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./current-site
@@ -320,7 +482,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    if: needs.build.outputs.deploy_target == 'pages' && (github.event_name == 'push' || github.event_name == 'pull_request')
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
