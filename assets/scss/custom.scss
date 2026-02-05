@@ -175,6 +175,9 @@ body > img:first-of-type,
   -webkit-text-fill-color: transparent;
   background-clip: text;
   padding-bottom: 0.15ex;
+  .ti-banner-title-a {
+    margin-left: 0.02em;
+  }
   @media (max-width: 726px) {
     font-size: 11vw;
   }
@@ -185,7 +188,7 @@ body > img:first-of-type,
   font-size: 1.4rem;
   font-style: italic;
   font-weight: 400;
-  color: #fbfcff;
+  color: #d3daf2;
   line-height: 1.1;
   padding-bottom: 2ex;
   max-width: 55%;
