@@ -3,7 +3,7 @@ id: news-20250522-SPARC-FAIR-Codeathon-2025
 ---
 ## SPARC Seminar Series - *In Silico* Safety Assessment of Neural Interfaces
 
-Are you ready for a challenge? Submit your project ideas for the interactive 3-day SPARC FAIR Codeathon 2025 happening August 2–4, with US$20,000 in total prizes!
+Are you ready for a challenge? Submit your project ideas for the interactive 3-day SPARC FAIR Codeathon 2025 happening August 2 – 4, with US$20,000 in total prizes!
 
 [SPARC](https://commonfund.nih.gov/sparc), funded by the National Institutes of Health, is a large research program dedicated to advancing the understanding, technologies, and therapeutic approaches in the realm of the autonomic nervous system and its impact on organ physiology. IT'IS, together with its [SPARC Data and Resource Center](https://docs.sparc.science/) (DRC) partners, is looking for creative project ideas for the interactive 3-day SPARC FAIR Codeathon 2025 happening August 2 – 4, with US$20,000 in total prizes!
 
@@ -19,5 +19,6 @@ The IT'IS [o²S²PARC platform](https://osparc.io/) has proven pivotal to the 
 Submit your ideas for Codeathon projects today!
 
 More information is available on the [SPARC Portal](https://sparc.science/news-and-events/events/2025-sparc-fair-codeathon), including examples of [previous Codeathon projects](https://sparc.science/tools-and-resources/tools?resourceType=Software).
+
 
 
