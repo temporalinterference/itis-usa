@@ -5,7 +5,7 @@ id: news-20250410-Special-Issue-on-Neurostimulation
 
 **A Featured Collection of Publications in Bioelectromagnetics Special Issue on Neurostimulation.**
 
-The journal Bioelectromagnetics launched its first Special Issue, with this inaugural edition focused on the dynamic and rapidly advancing field of neurostimulation. The guest editors are Alvaro Pascual-Leone (Harvard, USA) and Esra Neufeld (IT'IS, Switzerland). The featured contributions are [two notable publications](https://itis.swiss/s/news-events/news/publications/2025/recommendations-for-the-safe-application-of-tis-in-the-human-brain) from the IT’IS Foundation. The majority of the publications are available via open access.
+The journal Bioelectromagnetics launched its first Special Issue, with this inaugural edition focused on the dynamic and rapidly advancing field of neurostimulation. The guest editors are Alvaro Pascual-Leone (Harvard, USA) and Esra Neufeld (IT'IS, Switzerland). The featured contributions are [two notable publications](https://itis.swiss/s/news-events/news/publications/2025/recommendations-for-the-safe-application-of-tis-in-the-human-brain) from IT’IS. The majority of the publications are available via open access.
 
 {{< modal-image news-20250410-Special-Issue-on-Neurostimulation.jpg >}}
 {{< /modal-image >}}
@@ -30,7 +30,6 @@ This Special Issue includes the following topics:
 
 * Toward Safety Protocols for Peripheral Nerve Stimulation (PNS): A Computational and Experimental Approach
 
-The guest editors were [Prof. Alvaro Pascual-Leone](https://mbb.harvard.edu/people/alvaro-pascual-leone) from Harvard Medical School, a prominent opinion leader in neuromodulation, and [Dr. Esra Neufeld](https://itis.swiss/who-we-are/staff-members/project-leaders/esra-neufeld/) of the IT’IS Foundation, a leading expert in computational neuromodeling.
+The guest editors were [Prof. Alvaro Pascual-Leone](https://mbb.harvard.edu/people/alvaro-pascual-leone) from Harvard Medical School, a prominent opinion leader in neuromodulation, and [Dr. Esra Neufeld](https://itis.swiss/who-we-are/staff-members/project-leaders/esra-neufeld/) of IT’IS, a leading expert in computational neuromodeling.
 
 The Special Issue can be accessed [here](https://onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1521-186X.Neurostimulation).
-
