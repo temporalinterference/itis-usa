@@ -25,7 +25,7 @@ IT'IS USA plays a vital role in developing science-based safety standards and gu
 Our standards contributions are:
 - Based on rigorous scientific evidence
 - Transparent and inclusive
-- Regularly updated on teh bisi of the latest research
+- Regularly updated on the basis of the latest research
 - Formulated to protect the health workers and of the public 
 
 ### Impact
