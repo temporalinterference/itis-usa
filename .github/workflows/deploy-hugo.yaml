@@ -16,9 +16,26 @@ name: Deploy Hugo site
 #   SITE_URL — optional (falls back to configure-pages output)
 #
 # Server-side rsync setup:
-#   The remote uses restricted rsync-over-SSH (command= in authorized_keys).
-#   No shell access, but rsync works both directions (push and pull).
-#   Deploy destination: public_html/
+#   The remote uses rrsync (restricted rsync) to limit SSH access to
+#   public_html/ with no shell login. Both push and pull are allowed
+#   so the workflow can read back the branch directory listing.
+#
+#   1. Install rrsync (ships with rsync):
+#        # Debian/Ubuntu — already at /usr/bin/rrsync
+#        # RHEL/CentOS   — cp /usr/share/doc/rsync/support/rrsync /usr/local/bin/
+#        # verify:
+#        which rrsync
+#
+#   2. Create the deploy user and web root:
+#        sudo useradd -m -s /usr/sbin/nologin deployuser
+#        sudo mkdir -p /home/deployuser/public_html
+#        sudo chown deployuser:deployuser /home/deployuser/public_html
+#
+#   3. Add the deploy key to ~deployuser/.ssh/authorized_keys:
+#        restrict,command="rrsync /home/deployuser/public_html" ssh-ed25519 AAAA...
+#
+#      "restrict" disables port-forwarding, agent-forwarding, pty, etc.
+#      rrsync confines all rsync operations to the given directory.
 
 on:
   push:
