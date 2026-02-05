@@ -36,6 +36,8 @@ name: Deploy Hugo site
 #
 #      "restrict" disables port-forwarding, agent-forwarding, pty, etc.
 #      rrsync confines all rsync operations to the given directory.
+#      Rsync paths in this workflow are relative to the rrsync root (e.g. "."
+#      maps to public_html/).
 
 on:
   push:
@@ -356,11 +358,11 @@ jobs:
               --exclude='previews.html' \
               --exclude='robots.txt' \
               -e "$SSH_CMD" \
-              public/ "${SSH_USER}@${SSH_HOST}:public_html/"
+              public/ "${SSH_USER}@${SSH_HOST}:."
           else
             rsync -avz --delete \
               -e "$SSH_CMD" \
-              public/ "${SSH_USER}@${SSH_HOST}:public_html/branch-${BRANCH}/"
+              public/ "${SSH_USER}@${SSH_HOST}:branch-${BRANCH}/"
           fi
 
       - name: Update previews and robots (rsync)
@@ -379,7 +381,7 @@ jobs:
             --include='branch-*/' \
             --exclude='*' \
             -e "$SSH_CMD" \
-            "${SSH_USER}@${SSH_HOST}:public_html/" remote-branches/
+            "${SSH_USER}@${SSH_HOST}:." remote-branches/
 
           # Generate previews.html locally
           cat > previews.html << 'HTMLEOF'
@@ -425,7 +427,7 @@ jobs:
           # Push both files to remote
           rsync -avz \
             -e "$SSH_CMD" \
-            previews.html robots.txt "${SSH_USER}@${SSH_HOST}:public_html/"
+            previews.html robots.txt "${SSH_USER}@${SSH_HOST}:."
 
       - name: Generate preview index (pages)
         if: steps.deploy-target.outputs.target == 'pages'
