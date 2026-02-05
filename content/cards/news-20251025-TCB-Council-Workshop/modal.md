@@ -5,7 +5,7 @@ id: news-20251025-TCB-Council-Workshop
 
 **IT’IS USA presents latest research in millimeter and sub-THz exposure systems.**
 
-The TCB Council workshop, a semi-annual event, was held in Baltimore, Maryland from October 21–23, 2025.
+The TCB Council workshop, a semi-annual event, was held in Baltimore, Maryland from October 21 – 23, 2025.
  
 This workshop, which was preceded by a one-day radiofrequency (RF) exposure training session on October 20, was unusual in that the typical full day of presentations by the Federal Communications Commission (FCC) had to be re-organized due to the U.S. government shutdown: representatives from the FCC Office of Engineering and Technology (OET) and the National Institute of Science and Technology (NIST) were unable to attend. However, Adam Chan, the Director of the FCC Council on National Security, attended and presented an update on the FCC’s enforcement of its “Bad Labs” rules, including withdrawal of recognition of testing labs that are owned or controlled by a nation considered a foreign adversary of the USA. Chan also summarized the FCC’s enforcement of the U.S. Secure Equipment Act, which prohibits authorization of equipment and services that are identified as a threat to US national security. 
 
@@ -17,3 +17,4 @@ Numerical evaluation is accepted on a limited basis by the FCC and ISED. Kaitlin
 
 {{< modal-image news-20251025-TCB-Council-Workshop-1.jpg >}}
 {{< /modal-image >}}
+
