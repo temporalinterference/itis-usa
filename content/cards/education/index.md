@@ -1,4 +1,6 @@
 ---
 title: Education
 ---
-Comprehensive training programs, workshops, and educational resources to advance understanding of bioelectromagnetics and foster the next generation of researchers.
+IT’IS USA provides education and training in bioelectromagnetics and computational life and health sciences, with student internships, doctoral research projects, and continuing education for scientists, industry professionals, and regulatory personnel.
+
+

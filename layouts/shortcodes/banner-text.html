@@ -1,0 +1,7 @@
+{{- $image := .Get "image" -}}
+{{- $subtitle := .Inner | strings.TrimSpace | replaceRE "\n" "<br>" | safeHTML -}}
+
+{{ partial "banner-text.html" (dict
+    "image" $image
+    "subtitle" $subtitle
+    "Page" .Page) }}

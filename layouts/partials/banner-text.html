@@ -1,0 +1,22 @@
+<div id="banner-text-container">
+    <div class="uk-container uk-container-xsmall">
+        <div class="ti-banner-text-wrapper">
+            {{- $img := .Page.Resources.Get .image -}}
+            {{- if $img -}}
+                <img src="{{ $img.RelPermalink }}" alt="Banner Image" class="ti-banner-bg">
+            {{- else -}}
+                {{- $imgAsset := resources.Get (printf "images/%s" .image) -}}
+                {{- if $imgAsset -}}
+                    <img src="{{ $imgAsset.RelPermalink }}" alt="Banner Image" class="ti-banner-bg">
+                {{- end -}}
+            {{- end -}}
+
+            <div class="ti-banner-overlay">
+                <div class="ti-banner-title">IT'IS US<span class="ti-banner-title-a">A</span></div>
+                {{- if .subtitle -}}
+                <div class="ti-banner-subtitle">{{ .subtitle }}</div>
+                {{- end -}}
+            </div>
+        </div>
+    </div>
+</div>

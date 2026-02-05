@@ -1,0 +1,8 @@
+---
+title: SEAWave Risk Assessment Meeting in Lyon
+---
+
+2025-10-17
+
+SEAWave Partner IARC Hosts Work Package 9 Risk Assessment Workshop in Lyon. From October 13 – 16, 2025, SEAWave partners, including IT’IS and Z43 member SPEAG, gathered in Lyon for the Work Package 9 Risk Assessment Workshop hosted by the International Agency for Research on Cancer (IARC).
+

@@ -4,38 +4,46 @@ id: research
 
 ## Research Activities
 
-IT'IS USA is at the forefront of research into the interaction between electromagnetic fields and biological systems.
+IT'IS USA is at the forefront of research into the interactions between electromagnetic fields (EMF) and biological systems.
 
 ### Focus Areas
 
 **Computational Bioelectromagnetics**
-- Advanced modeling of field interactions with tissues
-- Multi-scale simulation from molecular to organ level
-- Development of anatomically accurate computational models
+* Advanced modeling of the interactions of EMF with tissues
+* Multi-scale simulations from molecular to organ level
+* Development of anatomically accurate computational models
 
 **Medical Applications**
-- Therapeutic applications of electromagnetic fields
-- Medical device safety assessment
-- Treatment planning optimization
+* Therapeutic applications of EMF
+* Temporal interference stimulation (TIS)
+* Safety assessment of magnetic resonance imaging (MRI) protocols
+* Safety assessment of medical devices, especially in the context of MRI scanning
+* Hyperthermia 
+* Treatment planning optimization
 
 **Dosimetry and Exposure Assessment**
-- Personal exposure monitoring
-- Environmental field mapping
-- Compliance testing methodologies
+* Personal exposure monitoring
+* Environmental field mapping
+* Compliance testing methodologies
 
 **Safety Standards Development**
-- Scientific basis for exposure guidelines
-- Risk assessment methodologies
-- Testing protocol development
+* Scientific basis for exposure guidelines
+* Risk assessment methodologies
+* Development of testing protocols for wireless devices  
 
 ### Collaborations
 
 We work closely with:
-- Leading research universities
-- Medical institutions
-- Industry partners
-- Regulatory agencies worldwide
+* Our Swiss partners: [IT'IS](https://itis.swiss/), [Schmid and Partner Engineering AG](https://speag.swiss/), [ZMT Zurich MedTech AG](https://zmt.swiss/), and [TI Solutions AG](https://temporalinterference.com/)
+* Leading research universities worldwide
+* Medical institutions
+* Industry partners
+* Regulatory agencies worldwide
 
 ### Funding
 
 Our research is supported by government agencies, private foundations, and industry partnerships, ensuring independence and scientific rigor.
+
+{{< modal-image ITIS-USA-research-1920px.jpg >}}
+{{< /modal-image >}}
+
