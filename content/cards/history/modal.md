@@ -6,17 +6,17 @@ id: history
 
 The Foundation for Research on Information Technologies in Society USA, Inc. (IT'IS USA), is a sister organization of the Foundation for Research on Information Technologies in Society ([IT'IS](https://itis.swiss/)) in Zurich, Switzerland. It is a financially and legally independent tax-exempt institution based in Maryland, USA.
 
-IT'IS USA was established on May 21, 2010, and held its founding board meeting on October 11, 2010 on the campus of the University of Maryland, College Park MD, USA.
+IT'IS USA was established on May 21, 2010, and held its founding board meeting on October 11, 2010, on the campus of the University of Maryland, College Park MD, USA.
 
 ### Foundation Origins
 
-The IT'IS Foundation was established in 1999 in Zurich, Switzerland, with the mission to assess the impact of exposure to electromagnetic fields (EMF) on health and to develop therapeutic applications of EMF.
+IT'IS was established in 1999 in Zurich, Switzerland, with the mission to assess the impact of exposure to electromagnetic fields (EMF) on health and to develop therapeutic applications of EMF.
 
 ### Expansion to the USA
 
 IT'IS USA was established to:
 - Foster collaboration with US research institutions
-- Engage with US regulatory agencies
+- Engage with U.S. regulatory agencies
 - Support innovation in American industry 
 - Address region-specific research needs
 - Facilitate the formulation of safety standards in the USA
@@ -41,7 +41,7 @@ IT'IS USA was established to:
 
 ### Global Impact
 
-IT'IS Foundation research has influenced:
+IT'IS research has influenced:
 - International exposure guidelines
 - Medical device regulations
 - Telecommunications standards
