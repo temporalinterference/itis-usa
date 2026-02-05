@@ -17,5 +17,3 @@ We are excited to publish the 2024 IT'IS Annual Report! This year’s edition hi
 * The team, including the board members
 
 * Selected partners and sponsors
-
-Download Annual Report
