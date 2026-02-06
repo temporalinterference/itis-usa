@@ -8,7 +8,7 @@ IT’IS USA is an independent, non-profit, tax-exempt research institute committ
 ### Programs
 **Resources**
 * [SPARC Resources](https://sparc.science/)
-* [o2S2PARC](https://osparc.io/) users support and training
+* [o²S²PARC](https://osparc.io/) users support and training
 
 **Academic Partnerships**
 * Collaborative research programs with universities
