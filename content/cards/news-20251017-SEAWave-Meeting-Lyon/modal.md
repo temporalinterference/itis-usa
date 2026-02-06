@@ -1,5 +1,5 @@
 ---
-id: news-2025-10-17-SEAWave-Meeting-Lyon
+id: news-20251017-SEAWave-Meeting-Lyon
 ---
 ## SEAWave Risk Assessment Meeting in Lyon
 
@@ -13,3 +13,4 @@ At the productive meeting, all inputs were carefully reviewed and discussed to a
 
 [SEAWave](https://seawave-project.eu/), is co-funded by the 
 [HORIZON Research and Innovation Actions](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en) (Belgium) and the [State Secretariat for Education, Research, and Innovation](https://www.sbfi.admin.ch/en) (SERI, Switzerland). A big thank you to our colleagues at IARC and all SEAWave partners for their inspiring discussions and collaborative work during the workshop!
+
