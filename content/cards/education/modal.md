@@ -13,7 +13,7 @@ IT’IS USA is an independent, non-profit, tax-exempt research institute committ
 **Academic Partnerships**
 * Collaborative research programs with universities
 * Guest lectures and seminars
-* Co-supervision of student internships doctoral research projects
+* Co-supervision of student internships and doctoral research projects
 
 ### Target Audiences
 * Graduate students and postdocs
