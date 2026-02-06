@@ -12,9 +12,7 @@ Prof. Niels Kuster is a founding member of IT'IS USA and well as the founder and
 {{< image-text title="Esra Neufeld" src="Esra-Neufeld-500px.jpg" pos="left" >}}
 Dr. Esra Neufeld is Associate Director of the Foundation for Research on Information Technologies in Society (IT’IS) in Zurich, Switzerland, and Head of the Computational Life and Health Sciences (CLaHS) group at IT’IS. He leads several research teams on advanced multiphysics simulation in medicine, treatment-planning software, medical image analysis and anatomical model generation, applied simulations, particularly in the field of bio-electromagnetics and electromagnetic-tissue interactions – including heating, neurostimulation, and cell proliferation, etc. – as well as *in silico* clinical trials and standardization.{{< /image-text >}}
 
-{{< image-text title="Gal Shafirstein" src="Gal-Shafirstein-500px.jpg" pos="left" >}}
-Dr. Gal Shafirstein is the head of translational and clinical research on photodynamic therapy (PDT) at Roswell Park Comprehensive Cancer Center. The focus of his research is on light dosimetry for interstitial and intraoperative PDT and treatment planning to improve outcomes for patients with advanced head and neck or lung cancers who have not responded to standard therapies. He is a principal investigator/project leader on several grants funded by the National Institutes of Health. He is the co-inventor on 8 patents and has co-authored 79 peer reviewed scientific papers. Dr. Shafirstein is a frequent invited speaker whose honors include the Lyon New Scientist Development Award, several Technion awards for excellence, and the national Landau Prize for distinction in research.{{< /image-text >}}
-
 # Former Directors of the Board
 
 Boris C. Pasche, M.D., Ph.D., Wayne State University, USA (2010 - 2025)
+
