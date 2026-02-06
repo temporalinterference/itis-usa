@@ -12,6 +12,7 @@ IT'IS USA is at the forefront of research into the interactions between electrom
 * Advanced modeling of the interactions of EMF with tissues
 * Multi-scale simulations from molecular to organ level
 * Development of anatomically accurate computational models
+* Platforms for FAIR computational modeling, e.g., [o2S2PARC](https://osparc.io/)
 
 **Medical Applications**
 * Therapeutic applications of EMF
