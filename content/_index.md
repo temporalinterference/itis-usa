@@ -37,6 +37,7 @@ Activities
 
 {{< card-holder >}}
 {{< card research >}}
+{{< card oSPARC >}}
 {{< card standards >}}
 {{< card education >}}
 {{< /card-holder >}}
