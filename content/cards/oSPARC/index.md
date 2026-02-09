@@ -1,6 +1,4 @@
 ---
 title: o²S²PARC
 ---
-IT’IS USA is promoting o²S²PARC, a simulation platform created as part of the NIH SPARC Program to ensure sustainable, reproducible, and FAIR computational modeling in the field of bioelectronic medicine.
-
-
+IT’IS USA is promoting o²S²PARC, a simulation platform created as part of the NIH SPARC Program to ensure sustainable, reproducible, and FAIR computational modeling in the field of bioelectronic medicine. The platform allows researchers to create, run, and share modeling and data analysis workflows directly in a web browser.
