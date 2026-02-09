@@ -3,7 +3,7 @@ id: news-20250320-ITIS-Annual-Report-2024
 ---
 ## IT'IS Annual Report 2024
 
-We are excited to publish the 2024 IT'IS Annual Report! This year’s edition highlights include:
+The 2024 IT'IS Annual Report is now published! This year’s edition highlights include:
 
 * A look into research advancements to ensure the safety of next-generation non-invasive brain stimulation, as well as information on:
 
@@ -21,6 +21,7 @@ We are excited to publish the 2024 IT'IS Annual Report! This year’s edition hi
 {{< /modal-image >}}
 
 {{< modal-download ITIS-Annual-Report-2024.pdf >}}Download Annual Report{{< /modal-download >}}
+
 
 
 
