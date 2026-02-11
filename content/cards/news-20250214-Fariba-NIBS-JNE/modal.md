@@ -14,4 +14,7 @@ The scientific and technical impact of the study can be summarized as:
 
 [ACCESS ARTICLE ONLINE](https://iopscience.iop.org/article/10.1088/1741-2552/ad8efa)
 
+{{< modal-image news-20250214-Fariba-NIBS-JNE.jpg >}}
+{{< /modal-image >}}
+
 
