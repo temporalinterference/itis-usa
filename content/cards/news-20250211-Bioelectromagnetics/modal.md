@@ -26,3 +26,7 @@ The scientific and technical impact of the study can be summarized as:
 
 [ACCESS ARTICLE PART II ONLINE](https://onlinelibrary.wiley.com/doi/10.1002/bem.22536)
 
+{{< modal-image news-20250211-Bioelectromagnetics.jpg >}}
+{{< /modal-image >}}
+
+
