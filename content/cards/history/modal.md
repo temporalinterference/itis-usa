@@ -15,37 +15,37 @@ IT'IS was established in 1999 in Zurich, Switzerland, with the mission to assess
 ### Expansion to the USA
 
 IT'IS USA was established to:
-- Foster collaboration with US research institutions
-- Engage with U.S. regulatory agencies
-- Support innovation in American industry 
-- Address region-specific research needs
-- Facilitate the formulation of safety standards in the USA
+* Foster collaboration with US research institutions
+* Engage with U.S. regulatory agencies
+* Support innovation in American industry 
+* Address region-specific research needs
+* Facilitate the formulation of safety standards in the USA
 
 ### Key Milestones
 
 **2000s: Pioneering Research**
-- Development of anatomical modeling techniques
-- Launch of the [Virtual Population](https://itis.swiss/virtual-population/) models
-- Establishment of the [Tissue Properties Database](https://itis.swiss/virtual-population/tissue-properties/database/)
+* Development of anatomical modeling techniques
+* Launch of the [Virtual Population](https://itis.swiss/virtual-population/) models
+* Establishment of the [Tissue Properties Database](https://itis.swiss/virtual-population/tissue-properties/database/)
 
 **2010s: International Leadership**
-- IT'IS USA established
-- Major contributions to international safety standards
-- Breakthroughs on assessments of medical device safety 
-- Advanced *in silico* clinical trial methods
+* IT'IS USA established
+* Major contributions to international safety standards
+* Breakthroughs on assessments of medical device safety 
+* Advanced *in silico* clinical trial methods
 
 **2020s: Innovation and Growth**
-- Leadership on methods for assessment of 5G exposure 
-- Machine learning integration
-- Expansion of medical applications
+* Leadership on methods for assessment of 5G exposure 
+* Machine learning integration
+* Expansion of medical applications
 
 ### Global Impact
 
 IT'IS research has influenced:
-- International exposure guidelines
-- Medical device regulations
-- Telecommunications standards
-- Clinical practice worldwide
+* International exposure guidelines
+* Medical device regulations
+* Telecommunications standards
+* Clinical practice worldwide
 
 ### Looking Forward
 
