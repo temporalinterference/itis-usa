@@ -30,6 +30,7 @@ News
 {{< card news-20250320-ITIS-Annual-Report-2024 >}}
 {{< card news-20250228-IEC-TC106-in-Zurich >}}
 {{< card news-20250218-KPRF >}}
+{{< card news-20250211-Bioelectromagnetics >}}
 
 {{< /card-holder >}}
 
