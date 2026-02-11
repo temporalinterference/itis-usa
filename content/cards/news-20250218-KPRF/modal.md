@@ -29,3 +29,7 @@ The fellowship is open to all female students as well as recently graduated scie
 
 April 30, 2025, 23:59h Swiss local time
 Detailed instructions about how to apply can be found [here](https://itis.swiss/fellowships/katja-pokovic-research-fund/research-fellowships/).
+
+{{< modal-image Education-Katja-Pokovic-Research-Fellowship-1920px.jpg >}}
+{{< /modal-image >}}
+
