@@ -23,6 +23,7 @@ News
 {{< card news-20251017-SEAWave-Meeting-Lyon >}}
 {{< card news-20250904-oSPARC-Year8 >}}
 {{< card news-20250820-FDA-Approval >}}
+{{< card news-20250805-Aiping-prone-MRI >}}
 {{< card news-20250710-SPARC-Seminar >}}
 {{< card news-20250604-IEC-TC-106-IEEE-ICES-TC34-Mexico >}}
 {{< card news-20250522-SPARC-FAIR-Codeathon-2025 >}}
