@@ -28,3 +28,4 @@ Over the past 18 months, IT’IS has developed and installed three different exp
 The installation of the exposure system at Fraunhofer ITEM in March was the last installation and experiments are now up and running. Overall, the work required for installation was much more significant than anticipated as off-the-shelf components were not available, i.e., all components had to be developed and manufactured on site at our premises in Zurich.
 We are looking forward to the results of the various experiments, which are expected to become available in late 2025 and early 2026.
 
+
