@@ -30,12 +30,10 @@ News
 {{< card news-20250410-Special-Issue-on-Neurostimulation >}}
 {{< card news-20250320-ITIS-Annual-Report-2024 >}}
 {{< card news-20250228-IEC-TC106-in-Zurich >}}
-{{< card news-20250218-KPRF >}}
 {{< card news-20250214-Fariba-NIBS-JNE >}}
 {{< card news-20250211-Bioelectromagnetics >}}
 {{< card news-20240502-Exposure-Systems >}}
 {{< card news-20240319-TyProxi >}}
-{{< card news-20240218-KPRF >}}
 
 {{< /card-holder >}}
 
