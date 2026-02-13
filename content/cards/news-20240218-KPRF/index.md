@@ -1,8 +1,9 @@
 ---
-title: 2024 Call is Open - Katja Poković Research Fellowship
+title: 2024 Call for Applications - Katja Poković Research Fellowship
 ---
 February 18, 2024
 
-Now accepting applications! The IT’IS Foundation is excited to announce that the 2024 Katja Poković Research Fellowship call for proposals is open!
+The call for applications for the 2024 Katja Poković Research Fellowship Award is now open. The call is aimed specifically at female applicants working in the fields of electromagnetics and information technology.
 
-This initiative is dedicated to empowering and supporting exceptional female scientists, fostering innovation and scientific excellence in electromagnetics and its applications in information and medical technologies.
+The IT’IS Foundation is pleased to announce the 2024 call for proposals for a Katja Poković Research Fellowship, which is open specifically for female researchers in the fields of electromagnetics and information technology. 
+
