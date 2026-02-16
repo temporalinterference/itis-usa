@@ -32,3 +32,4 @@ Detailed instructions about how to apply can be found [here](https://itis.swiss
 
 {{< modal-image Education-Katja-Pokovic-Research-Fellowship-1920px.jpg >}}
 {{< /modal-image >}}
+
