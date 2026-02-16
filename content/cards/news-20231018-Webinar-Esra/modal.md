@@ -12,3 +12,7 @@ Part of the presented work was performed using the [o²S²PARC platform](https
 This webinar is part of an exciting joint [webinar series](https://www.physiology.org/professional-development/meetings-events/webinars/webinar-series-neurophysiology?SSO=Y) resulting from the collaborative efforts of APS in partnership with the [Society for Neuroscience](https://www.sfn.org/), [Federation of European Neuroscience Societies](https://www.fens.org/), [American Autonomic Society](https://americanautonomicsociety.org/), and [InsideScientific](https://insidescientific.com/). The series aims to delve into cutting-edge research updates, new findings, core principles, and advancements in the realm of neuroscience and its associated disease models.
 
 For more webinars in the series check [here](https://insidescientific.com/webinars/).
+
+{{< modal-image news-20231018-Webinar-Esra.jpg >}}
+{{< /modal-image >}}
+
