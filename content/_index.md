@@ -34,6 +34,7 @@ News
 {{< card news-20250211-Bioelectromagnetics >}}
 {{< card news-20240502-Exposure-Systems >}}
 {{< card news-20240319-TyProxi >}}
+{{< card news-20231018-Webinar-Esra >}}
 
 {{< /card-holder >}}
 
