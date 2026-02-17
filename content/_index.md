@@ -15,7 +15,7 @@ News
 {{< /section >}}
 
 {{< card-holder >}}
-{{< card news-20260218-KPRF >}}
+# {{< card news-20260218-KPRF >}}
 {{< card news-20260204-Esra-on-board >}}
 {{< card news-20260115-MRI-Filter-Solutions >}}
 {{< card news-20251110-Computational-Modeling >}}
