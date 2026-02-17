@@ -26,5 +26,6 @@ The scientific and technical impact of the study can be summarized as:
 * At 1.5 T (64 MHz), anatomical positioning relative to the birdcage coil axis significantly affects exposure, with Etan and specific absorption rate values reduced by over 50% when models are moved to the iso-center – highlighting strong position-dependent coupling at lower frequencies, a phenomenon that is less pronounced at 3.0 T (128 MHz)
 * For implants present during face-down MRI, posture-dependent risk must be analyzed or included in uncertainty estimates, as worst-case anatomical scenarios cannot be reliably predicted, warranting added safety margins when labeling lacks clarity
 
-* [ACCESS ARTICLE ONLINE](https://iopscience.iop.org/article/10.1088/1361-6560/adf58d)
+[ACCESS ARTICLE ONLINE](https://iopscience.iop.org/article/10.1088/1361-6560/adf58d)
+
 
