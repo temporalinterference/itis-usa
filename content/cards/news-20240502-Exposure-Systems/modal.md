@@ -25,4 +25,5 @@ Over the past 18 months, IT’IS has developed and installed three different exp
 {{< /modal-image >}}
 *Millimeter-wave system (27.5 GHz) for cell exposure, installed at Fraunhofer ITEM, Germany, as part of the SEAWave project.*
 
-* The installation of the exposure system at Fraunhofer ITEM in March was the last installation and experiments are now up and running. Results of the various experimentsare expected to become available in late 2025 and early 2026.
+* The installation of the exposure system at Fraunhofer ITEM in March was the last installation and experiments are now up and running. Results of the various experiments are expected to become available in late 2025 and early 2026.
+
