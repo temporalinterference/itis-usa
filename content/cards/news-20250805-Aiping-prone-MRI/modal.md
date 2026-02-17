@@ -3,7 +3,7 @@ id: news-20250805-Aiping-prone-MRI
 ---
 ## Breast MRI in the Prone Position - Impact on RF-Induced Heating of Active Implantable Medical Devices (Phys. Med. Biol.)
 
-**Aiping Yao, Tolga Goren, Bryn A. Lloyd, Carina Johanna Fuss, Silvia Farcito, Jing Wang, Pengfei Yang, and Niels Kuster, Physics in Medicine and Biology 2025, Volume 70, Issue 17, online 29 July 2025; doi: 10.1088/1361-6560/adf58d**
+**Aiping Yao, Tolga Goren, Bryn A. Lloyd, Carina J. Fuss, Silvia Farcito, Jing Wang, Pengfei Yang, and Niels Kuster, Physics in Medicine and Biology 2025, Volume 70, Issue 17, online 29 July 2025; doi: 10.1088/1361-6560/adf58d**
 
 Prone (face-down) postures, commonly used in breast examinations, as well as in wrist and elbow imaging, change the induced current path in the body and, therefore, the incident electric (E-) fields to implants during magnetic resonance imaging (MRI) scans, potentially leading to significant variations from risk predictions made on the basis of supine postures. The goal of this work is to investigate the impact of prone compared to supine postures in MRI breast examination on the radiofrequency (RF-) induced heating of medical implants. 
 
@@ -27,3 +27,4 @@ The scientific and technical impact of the study can be summarized as:
 * For implants present during face-down MRI, posture-dependent risk must be analyzed or included in uncertainty estimates, as worst-case anatomical scenarios cannot be reliably predicted, warranting added safety margins when labeling lacks clarity
 
 * [ACCESS ARTICLE ONLINE](https://iopscience.iop.org/article/10.1088/1361-6560/adf58d)
+
