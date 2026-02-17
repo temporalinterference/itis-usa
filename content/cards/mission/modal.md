@@ -1,14 +1,14 @@
 ---
 id: Mission
 ---
-# Our Mission Statement
+## Our Mission Statement
 
 * IT'IS USA is dedicated to expanding the scientific basis of the safe and beneficial application of electromagnetic (EM) energy in health and information technologies.
 * IT'IS USA is committed to improving and advancing the quality of life of people with disabilities through innovative research and application of emerging technologies.
 * IT'IS USA is an independent non-profit research institute.
 * IT'IS USA endeavors to provide a proactive, creative and innovative research environment for the cultivation of sound science, research, and education.
 
-# Strategies
+### Strategies
 
 IT’IS USA will achieve its mission and strategic goals by stimulating innovation, productivity, and pre-eminence in the following areas:
 * Assessment of the risks and safety aspects of wireless information technologies: IT’IS USA constantly and efficiently develops and refines experimental and analytical tools to optimize the safe application of wireless information technologies in society.
@@ -21,7 +21,7 @@ IT’IS USA will achieve its mission and strategic goals by stimulating innovati
 * Establishment of alliances and collaborative networks with academic and industrial organizations having mutual interests.
 * Expansion as the most prominent and recognized center of excellence for the safe application of wireless technologies.
 
-# Implementation Plan
+### Implementation Plan
 
 * Acquire consistent and primary funding from donors, sponsors, government agencies, and other foundations; funds for projects with non-disclosure agreement (NDA) restrictions may be accepted where there is a potential for new research areas with no NDA restrictions or to support other projects.
 * Consistently acquire a majority of scientifically interesting exposure and dosimetry assessment projects to maintain leadership in these vital technologies.

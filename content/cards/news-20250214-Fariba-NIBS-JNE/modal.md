@@ -1,0 +1,20 @@
+---
+id: news-20250214-Fariba-NIBS-JNE
+---
+## Fariba Karimi, Antonino M. Cassarà, Myles H. Capstick, Niels Kuster, and Esra Neufeld, Journal of Neural Engineering 2025, Volume 22, Issue 1, Article No. 016039, online 13 February 2025; doi: 10.1088/1741-2552/ad8efa
+
+Non-invasive brain stimulation (NIBS) methodologies, such as transcranial electric stimulation (tES), are increasingly employed for therapeutic, diagnostic, or research purposes. The concurrent presence of active/passive implants can pose safety risks, affect the NIBS delivery, or generate confounding signals. A systematic investigation is required to understand the interaction mechanisms, quantify exposure, assess risks, and establish guidance for NIBS applications. This work used measurements as well as a simplified generic and detailed anatomical modeling to: (i) systematically analyze exposure conditions with passive and active implants, local field enhancement, exposure dosimetry, tissue heating and neuromodulation, capacitive lead current injection, low-impedance pathways between electrode contacts, and insulation damage taken into consideration; (ii) identify risk metrics and efficient prediction strategies; (iii) quantify these metrics in relevant exposure cases; and (iv) identify worst case conditions. Various aspects, including implant design, positioning, scar tissue formation, anisotropy, and frequency were investigated. It was observed that, at typical tES frequencies, local enhancement of dosimetric exposure quantities can reach up to one order of magnitude for deep brain stimulation (DBS) and stereoelectroencephalography (SEEG) implants – more for elongated passive implants – potentially resulting in unwanted neuromodulation that can confound results but is still 2–3 orders of magnitude lower than active DBS. Under worst-case conditions, capacitive current injection in the active implant’s lead can produce local exposures of magnitudes similar to passive field enhancements, while capacitive pathways between contacts are negligible. At frequencies above 10 kHz, the magnitudes of the applied current increase, necessitating that the possibility of tissue heating be considered. Furthermore, capacitive effects become more prominent, leading to current injection that can reach DBS-like levels. Adverse effects from abandoned/damaged leads directly in the vicinity of the electrode cannot be excluded. Safety related concerns of tES application in the presence of implants are systematically identified and explored, resulting in specific and quantitative guidance and establishing a basis for safety standards. Furthermore, several methods for reducing risks are suggested, while the limitations are acknowledged.
+
+The scientific and technical impact of the study can be summarized as:
+
+* This study provides quantitative guidelines for safe NIBS application in patients with implants and establishes a basis for safety standards
+* Results indicate that, while it is unlikely that NIBS application in patients with SEEG and DBS implants would directly cause safety concerns, it could lead to unwanted neuromodulation and confound recording when invasive electrodes are used, e.g., in case of SEEG
+* Elongated passive implants, such as stents, may be incompatible with tES due to larger enhancement factors and may therefore pose direct safety risks
+* Abandoned and damaged leads, particularly when located near tES electrodes, may result in unwanted forms of stimulation
+
+[ACCESS ARTICLE ONLINE](https://iopscience.iop.org/article/10.1088/1741-2552/ad8efa)
+
+{{< modal-image news-20250214-Fariba-NIBS-JNE.jpg >}}
+{{< /modal-image >}}
+
+
