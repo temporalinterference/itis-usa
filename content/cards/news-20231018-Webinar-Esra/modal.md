@@ -1,7 +1,7 @@
 ---
 id: news-20231018-Webinar-Esra
 ---
-## IT’IS Co-Hosts Webinar “From Models to Heartbeats”
+## Webinar “From Models to Heartbeats” Co-Hosted by IT’IS
 
 **IT’IS co-hosted the live webinar: “From Models to Heartbeats: Computational Design of Vagus Nerve Stimulation for Cardiac Health” as part of the translational neuroscience webinar series “Neurophysiology: Exploring Basic and Clinical Consequences”.**
 
@@ -15,5 +15,6 @@ For more webinars in the series check [here](https://insidescientific.com/webin
 
 {{< modal-image news-20231018-Webinar-Esra.jpg >}}
 {{< /modal-image >}}
+
 
 
