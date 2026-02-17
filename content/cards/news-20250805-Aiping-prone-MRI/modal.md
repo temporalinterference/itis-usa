@@ -17,15 +17,16 @@ These findings underscore that it is important to consider patient posture in RF
 {{< /modal-image >}}
 *Side and top views of ViP model Ella in default supine pose, and modified for breast examination with one or both arms over the head, positioned either realistically with the breast at coil isocenter, or offset such that the torso is at isocenter similar to the supine case.*
 
-The E-field simulations in this work to model the induced E-fields inside the human body were performed on the [Sim4Life](https://sim4life.swiss/) platform (ZMT Zurich MedTech AG) with the EM-FDTD solver. The high-resolution [ViP](https://itis.swiss/virtual-population/virtual-population/overview/) model Ella was modified by morphing to represent MRI postures with one (“Superman”) or both arms (“Hands_Over”) up; the resulting field distributions are being added to the IT’IS [MRIxViP exposure library](https://itis.swiss/virtual-population/explib/overview/). The tissue properties were assigned according to the IT’IS [tissue properties database](https://itis.swiss/virtual-population/tissue-properties/overview/).
+The E-field simulations in this work to model the induced E-fields inside the human body were performed on the [Sim4Life](https://sim4life.swiss/) platform (ZMT Zurich MedTech AG) with the EM-FDTD solver. The high-resolution [ViP](https://itis.swiss/virtual-population/virtual-population/overview/) model Ella (IT'IS) was modified by morphing to represent MRI postures with one (“Superman”) or both arms (“Hands_Over”) up; the resulting field distributions are being added to [MRIxViP exposure library](https://itis.swiss/virtual-population/explib/overview/) (IT'IS). The tissue properties were assigned according to the IT’IS [tissue properties database](https://itis.swiss/virtual-population/tissue-properties/overview/).
 
 The scientific and technical impact of the study can be summarized as:
 
-* Changes in patient posture, including tissue deformation (e.g., hanging breast) and positioning (e.g., face-down MRI examinations with hands over head) alter the induced field distribution, leading to a difference of >1 dB in in vivo incident E-field and power deposition for DBS and pacemaker implants, and up to 5 dB for cochlear implants
+* Changes in patient posture, including tissue deformation (e.g., hanging breast) and positioning (e.g., face-down MRI examinations with hands over head) alter the induced field distribution, leading to a difference of >1 dB in *in vivo* incident E-field and power deposition for DBS and pacemaker implants, and up to 5 dB for cochlear implants
 * The potential impact for cochlear implants is notably greater because changes in arm posture significantly affect the local field distribution near the ears, enhancements that are dependent on the implant, the location of the implant, and on patient anatomy but are not represented in supine evaluations
 * At 1.5 T (64 MHz), anatomical positioning relative to the birdcage coil axis significantly affects exposure, with Etan and specific absorption rate values reduced by over 50% when models are moved to the iso-center – highlighting strong position-dependent coupling at lower frequencies, a phenomenon that is less pronounced at 3.0 T (128 MHz)
 * For implants present during face-down MRI, posture-dependent risk must be analyzed or included in uncertainty estimates, as worst-case anatomical scenarios cannot be reliably predicted, warranting added safety margins when labeling lacks clarity
 
 [ACCESS ARTICLE ONLINE](https://iopscience.iop.org/article/10.1088/1361-6560/adf58d)
+
 
 
