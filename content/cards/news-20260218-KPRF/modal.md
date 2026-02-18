@@ -5,9 +5,9 @@ id: news-20260218-KPRF
 
 **The call for the 2026 Katja Poković Research Fellowship is now open. The fellowship is awarded to outstanding female scientists and engineers who would like to join IT’IS to pursue cutting‑edge research in electromagnetics, dosimetry, bioelectromagnetics, and neuromodulation.**
 
-The 2026 Katja Poković Research Fellowship call is now open and outstanding **female scientists** are invited to apply!
+The 2026 Katja Poković Research Fellowship call is now open and outstanding **female scientists** are invited to apply! This is a unique opportunity to carry out cutting‑edge research at our sister organization IT’IS, in Zurich, in an inspiring, highly interdisciplinary environment. 
 
-This is a unique opportunity to carry out cutting‑edge research at our sister organization IT’IS, in Zurich, in an inspiring, highly interdisciplinary environment. The Katja Poković Research Fund was established in memory of [Katja Poković](https://itis.swiss/fellowships/katja-pokovic-research-fund/about/) to promote and support female engineers and to advance safe and beneficial applications of electromagnetic energy and information technologies.
+The Katja Poković Research Fund was established in memory of [Katja Poković](https://itis.swiss/fellowships/katja-pokovic-research-fund/about/) to promote and support female engineers and to advance safe and beneficial applications of electromagnetic energy and information technologies.
 
 **Why Apply?**
 
@@ -25,5 +25,6 @@ The fellowship is open to all female students as well as recently graduated scie
 
 The deadline for submission of applications is **April 30, 2026**, 23:59hrs Swiss local time. 
 For details on eligibility, required documents, and how to apply, please check [here](https://itis.swiss/fellowships/katja-pokovic-research-fund/research-fellowships/).
+
 
 
