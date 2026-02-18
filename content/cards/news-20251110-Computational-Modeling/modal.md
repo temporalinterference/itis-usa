@@ -7,7 +7,10 @@ id: news-20251110-Computational-Modeling
 
 Whisker flick stimulation is a commonly used protocol to investigate somatosensory processing in rodents. Neural activity evoked by whisker flicks produces a characteristic electroencephalogram (EEG) waveform known as a somatosensory evoked potential (SEP). In this paper, computational modeling is used to make predictions about the neural populations that contribute to this signal, either through their own membrane currents, or the membrane currents they elicit in downstream populations. While the model cannot fully explain the mechanisms of SEP generation, it is predicted that the initial positive deflection of the EEG waveform is driven largely by direct thalamic inputs to Layer 2/3 and Layer 5 pyramidal cells, while the negative deflection is driven by a more complex mix of sources, including thalamic and recurrent cortical connectivity. Small changes to the local connectivity of the circuit can have an important impact on the recorded EEG, without substantially affecting firing rates, suggesting that EEG may be useful in constraining *in silico* neural models.
 
-The finite element method was used to create a model of the rat head, with a recording electrode positioned directly over the forelimb region and a reference electrode positioned over the hindlimb region of the somatosensory cortex. The [Sim4Life](https://sim4life.swiss/) platform ([ZMT Zurich Med Tech](https://zmt.swiss/), Zurich, CH) was used to simulate a current applied between the electrodes and calculated the resulting electric potential generated in the rat head.
+{{< modal-image news-20251110-Computational-Modeling.jpg >}}
+{{< /modal-image >}}
+
+The finite element method was used to create a model of the rat head, with a recording electrode positioned directly over the forelimb region and a reference electrode positioned over the hindlimb region of the somatosensory cortex. The [Sim4Life](https://sim4life.swiss/) platform ([ZMT Zurich MedTech AG](https://zmt.swiss/), Zurich, CH) was used to simulate a current applied between the electrodes and calculated the resulting electric potential generated in the rat head.
 
 The scientific and technical impact of the study can be summarized as:
 
@@ -21,7 +24,7 @@ The scientific and technical impact of the study can be summarized as:
 
 * Understanding the origins and formation of EEG signals could inform the design of recording configurations that maximize the signal information content, e.g., for brain-machine-interfaces
 
-{{< modal-image news-20251110-Computational-Modeling.jpg >}}
-{{< /modal-image >}}
-
 [ACCESS ARTICLE ONLINE](https://www.sciencedirect.com/science/article/pii/S2589004225020541)
+
+
+

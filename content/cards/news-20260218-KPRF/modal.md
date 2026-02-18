@@ -1,35 +1,34 @@
 ---
 id: news-20260218-KPRF
 ---
-## 2026 Call is Open - Katja Poković Research Fellowship
+## Katja Poković Research Fellowship 2026: Now Accepting Applications ##
 
-Now accepting applications! The IT’IS Foundation is excited to announce that the 2026 Katja Poković Research Fellowship call for proposals is open!
+**The call for the 2026 Katja Poković Research Fellowship is now open. The fellowship is awarded to outstanding female scientists and engineers who would like to join IT’IS to pursue cutting‑edge research in electromagnetics, dosimetry, bioelectromagnetics, and neuromodulation.**
 
-This initiative is dedicated to empowering and supporting exceptional female scientists, fostering innovation and scientific excellence in electromagnetics and its applications in information and medical technologies.
+The 2026 Katja Poković Research Fellowship call is now open and outstanding **female scientists** are invited to apply! This is a unique opportunity to carry out cutting‑edge research at our sister organization IT’IS, in Zurich, in an inspiring, highly interdisciplinary environment. 
+
+{{< modal-image 20260218-news-item-visual-KPRF-call-for-applications.jpg >}}
+{{< /modal-image >}}
+
+The Katja Poković Research Fund was established in memory of [Katja Poković](https://itis.swiss/fellowships/katja-pokovic-research-fund/about/) to promote and support female engineers and to advance safe and beneficial applications of electromagnetic energy and information technologies.
 
 **Why Apply?**
 
-The Katja Poković Research Fellowship offers a unique opportunity to conduct groundbreaking research, gain access to cutting-edge resources, and collaborate with leading experts in the field. Whether you are embarking on doctoral or postdoctoral studies or seeking to join the IT’IS Foundation as a visiting scientist, this fellowship provides valuable support for advancing your academic and professional journey.
+The fellowship specifically supports incoming female researchers embarking on doctoral or postdoctoral studies at IT’IS or seeking to work as a visiting scientist. You will join a dynamic team, gain access to state‑of‑the‑art infrastructure, and contribute to projects with real‑world impact on technology and society.
 
-**Research Areas**
+**Research Areas**  
 
-We welcome applications in the following specific research areas:
+IT’IS welcomes applications that aim to shape the future of electromagnetics and its applications in information and medical technologies, work at the forefront of near‑field electromagnetic measurement technology, dosimetry, calibration methods for electromagnetic sensors, or bioelectromagnetics including neuroscience.
 
-* electromagnetic energy and information technologies
-* near-field electromagnetic measurement technology
-* dosimetry
-* calibration methods for electromagnetic sensors
-* bioelectromagnetics
+**Who Can Apply?**  
 
-**Who Can Apply?**
+The fellowship is open to all female students as well as recently graduated scientists and engineers of any nationality. Motivated, creative, and ambitious researchers, who are passionate about IT’IS’s research topics are encouraged to seize this opportunity and submit their application.
 
-The fellowship is open to all female students as well as recently graduated scientists of any nationality, based in Switzerland or coming from anywhere in the world. If you have a passion for advancing science and technology in electromagnetics, we encourage you to apply.
+**Deadlines and Instructions** 
 
-**Deadlines and Instructions**
+The deadline for submission of applications is **April 30, 2026**, 23:59hrs Swiss local time. 
+For details on eligibility, required documents, and how to apply, please check [here](https://itis.swiss/fellowships/katja-pokovic-research-fund/research-fellowships/).
 
-April 30, 2026, 23:59h Swiss local time
-Detailed instructions about how to apply can be found [here](https://itis.swiss/fellowships/katja-pokovic-research-fund/research-fellowships/).
 
-{{< modal-image Education-Katja-Pokovic-Research-Fellowship-1920px.jpg >}}
-{{< /modal-image >}}
+
 
