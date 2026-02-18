@@ -7,6 +7,9 @@ id: news-20260218-KPRF
 
 The 2026 Katja Poković Research Fellowship call is now open and outstanding **female scientists** are invited to apply! This is a unique opportunity to carry out cutting‑edge research at our sister organization IT’IS, in Zurich, in an inspiring, highly interdisciplinary environment. 
 
+{{< modal-image 20260218-news-item-visual-KPRF-call-for-applications.jpg >}}
+{{< /modal-image >}}
+
 The Katja Poković Research Fund was established in memory of [Katja Poković](https://itis.swiss/fellowships/katja-pokovic-research-fund/about/) to promote and support female engineers and to advance safe and beneficial applications of electromagnetic energy and information technologies.
 
 **Why Apply?**
@@ -25,6 +28,7 @@ The fellowship is open to all female students as well as recently graduated scie
 
 The deadline for submission of applications is **April 30, 2026**, 23:59hrs Swiss local time. 
 For details on eligibility, required documents, and how to apply, please check [here](https://itis.swiss/fellowships/katja-pokovic-research-fund/research-fellowships/).
+
 
 
 
