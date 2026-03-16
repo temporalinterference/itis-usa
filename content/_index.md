@@ -38,6 +38,7 @@ News
 {{< card news-20240319-TyProxi >}}
 {{< card news-20231018-Webinar-Esra >}}
 {{< card news-20231018-Influence-of-patient-head-definition >}}
+{{< card news-20230630-Efficient-Prediction-of-MRI-Gradient-Induced-Heating >}}
 
 {{< /card-holder >}}
 
