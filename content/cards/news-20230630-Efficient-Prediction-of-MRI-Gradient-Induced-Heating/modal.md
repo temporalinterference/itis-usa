@@ -11,8 +11,8 @@ This study, led by Istituto Nazionale di Ricerca Metrologica (INRIM) Turino, was
 
 The scientific and technical impact of the study can be summarized as:
 
-*A methodology based on device-specific power and temperature tensors is introduced to mathematically describe the magnetic resonance imaging (MRI) gradient-induced device heating of passive medical implants
-*The new methodology was used to numerically estimate the temperature rise of 4 reference orthopaedic implants due to linear polarized gradient fields from any direction was, and the findings were validated by comparisons to brute-force methods
-*The results can be used to predict the worst-case orientation of the gradient field, and estimate the device response, for subsequent experimental validation
+* A methodology based on device-specific power and temperature tensors is introduced to mathematically describe the magnetic resonance imaging (MRI) gradient-induced device heating of passive medical implants
+* The new methodology was used to numerically estimate the temperature rise of 4 reference orthopaedic implants due to linear polarized gradient fields from any direction was, and the findings were validated by comparisons to brute-force methods
+* The results can be used to predict the worst-case orientation of the gradient field, and estimate the device response, for subsequent experimental validation
 
 [ACCESS ARTICLE ONLINE](https://onlinelibrary.wiley.com/doi/10.1002/mrm.29787)
