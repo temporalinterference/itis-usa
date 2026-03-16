@@ -1,5 +1,5 @@
 ---
-id: 20230630-Efficient-Prediction-of-MRI-Gradient-Induced-Heating
+id: news-20230630-Efficient-Prediction-of-MRI-Gradient-Induced-Heating
 ---
 ## Efficient Prediction of MRI Gradient-Induced Heating for Guiding Safety Testing of Conductive Implants (Magn. Reson. Med.)
 
