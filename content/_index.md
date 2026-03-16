@@ -37,6 +37,7 @@ News
 {{< card news-20240502-Exposure-Systems >}}
 {{< card news-20240319-TyProxi >}}
 {{< card news-20231018-Webinar-Esra >}}
+{{< card news-20231018-Influence-of-patient-head-definition >}}
 
 {{< /card-holder >}}
 
