@@ -14,7 +14,7 @@ The existence of two incompatible definitions of the head in two related standar
 The impact of this technical note can be summarized as:
 
 * Definitions of the head extent used by major implant vendors and defined in ISO/TS 10974 (2018) are larger than those introduced in IEC 60601-2-33 (2022) by MR system vendors
-* The 2022 MR system vendor definition results in the potential for higher RF head exposure by up to 2.4 dB (factor 1.7) in the IT'IS [Vip](https://itis.swiss/virtual-population/virtual-population/overview/), compared to the 2018 definition of ISO 10974
+* The 2022 MR system vendor definition results in the potential for higher RF head exposure by up to 2.4 dB (factor 1.7) in the IT'IS [ViP](https://itis.swiss/virtual-population/virtual-population/overview/), compared to the 2018 definition of ISO 10974
 * Harmonizing the two related standards is urgently needed. Adopting the larger extent would reduce the maximum exposure and make the standard consistent with implant testing. In the meantime, all parties should specify which definition of the head was applied when estimating the maximum patient RF exposure during SAR-limited head and shoulder MR examinations
 * Where possible, safety assessments should be referenced to B1+ levels, if regulators and MR technicians are comfortable with such labeling
 
