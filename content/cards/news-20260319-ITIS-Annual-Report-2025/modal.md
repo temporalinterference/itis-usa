@@ -14,9 +14,9 @@ You will also find:
 * Our team, including the members of the board
 * A list of selected partners and sponsors
 
-DOWNLOAD REPORT
+{{< modal-download ITIS-Foundation-Annual-Report-2025.pdf >}}DOWNLOAD REPORT{{< /modal-download >}}
 
-VISUAL
+
 
 Here is the overview of 2025, composed by the IT’IS director Niels Kuster, and featured in our annual report.
 
