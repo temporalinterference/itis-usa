@@ -16,6 +16,7 @@ News
 
 {{< card-holder >}}
 <!-- {{< card news-20260218-KPRF >}} -->
+{{< card news-20260319-ITIS-Annual-Report-2025 >}}
 {{< card news-20260218-KPRF >}}
 {{< card news-20260204-Esra-on-board >}}
 {{< card news-20260115-MRI-Filter-Solutions >}}
