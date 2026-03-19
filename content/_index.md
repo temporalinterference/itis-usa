@@ -16,6 +16,7 @@ News
 
 {{< card-holder >}}
 <!-- {{< card news-20260218-KPRF >}} -->
+{{< card news-20260319-ITIS-Annual-Report-2025 >}}
 {{< card news-20260218-KPRF >}}
 {{< card news-20260204-Esra-on-board >}}
 {{< card news-20260115-MRI-Filter-Solutions >}}
@@ -30,7 +31,6 @@ News
 {{< card news-20250604-IEC-TC-106-IEEE-ICES-TC34-Mexico >}}
 {{< card news-20250522-SPARC-FAIR-Codeathon-2025 >}}
 {{< card news-20250410-Special-Issue-on-Neurostimulation >}}
-{{< card news-20250320-ITIS-Annual-Report-2024 >}}
 {{< card news-20250228-IEC-TC106-in-Zurich >}}
 {{< card news-20250214-Fariba-NIBS-JNE >}}
 {{< card news-20250211-Bioelectromagnetics >}}
