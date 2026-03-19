@@ -8,4 +8,4 @@ This year’s report features o²S²PARC, IT'IS's cloud-based, online-accessible
 {{< modal-image ITIS-Annual-Report-2025.jpg >}}
 {{< /modal-image >}}
 
-{{< modal-download ITIS-Foundation-Annual-Report-2025.pdf >}}DOWNLOAD ANNUAL REPORT{{< /modal-download >}}
+
