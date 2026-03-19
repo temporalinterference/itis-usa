@@ -16,7 +16,8 @@ You will also find:
 
 {{< modal-download ITIS-Foundation-Annual-Report-2025.pdf >}}DOWNLOAD REPORT{{< /modal-download >}}
 
-
+{{< modal-image ITIS-Annual-Report-2025.jpg >}}
+{{< /modal-image >}}
 
 Here is the overview of 2025, composed by the IT’IS director Niels Kuster, and featured in our annual report.
 
