@@ -39,6 +39,7 @@ News
 {{< card news-20231018-Webinar-Esra >}}
 {{< card news-20231018-Influence-of-patient-head-definition >}}
 {{< card news-20230630-Efficient-Prediction-of-MRI-Gradient-Induced-Heating >}}
+{{< card news-20230215-First-release-of-o2S2PARC-powered-software >}}
 
 {{< /card-holder >}}
 
