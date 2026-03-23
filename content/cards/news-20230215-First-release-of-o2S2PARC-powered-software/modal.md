@@ -7,7 +7,8 @@ id: news-20230215-First-release-of-o2S2PARC-powered-software
 
 *S4Llite* encompasses Sim4Life’s computer aided design, simulators, visualization, and post-processing tools, and even bundles them with the detailed whole-body anatomical model Yoon-sun from our [Virtual Population](https://itis.swiss/virtual-population/virtual-population/overview/), to study interactions between physical exposure and physiological responses and to design safe and effective therapies and devices in a validated anatomical environment. S4Llite is powered by [o2S2PARC](https://osparc.io), the interactive online platform we developed under the [NIH SPARC Program](https://commonfund.nih.gov/sparc) to ensure sustainable, reproducible, and FAIR (findable, accessible, interoperable, reusable) computational modeling in the field of bioelectronic medicine, from neural interfaces to peripheral nerve recruitment and the ensuing impact on organ function.
 
-
+{{< modal-image news-20230215-First-release-of-o2S2PARC-powered-software.jpg >}}
+{{< /modal-image >}}
 
 One of the key strengths of S4Llite is the modeling, investigation, and optimization of neural interfaces for stimulation and sensing – an application of particular relevance to the SPARC Program.
 
