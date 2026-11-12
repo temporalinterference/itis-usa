@@ -1,5 +1,5 @@
 ---
-title: SPARC: A Sustainable Repository for Datasets and Tools Bridging the Body and the Brain
+title: SPARC - A Sustainable Repository for Datasets and Tools Bridging the Body and the Brain
 ---
 
 November 13, 2026
