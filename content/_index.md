@@ -16,6 +16,7 @@ News
 
 {{< card-holder >}}
 <!-- {{< card news-20260218-KPRF >}} -->
+{{< card news-20261113-SPARC-award >}}
 {{< card news-20260319-ITIS-Annual-Report-2025 >}}
 {{< card news-20260218-KPRF >}}
 {{< card news-20260204-Esra-on-board >}}
@@ -37,9 +38,6 @@ News
 {{< card news-20240502-Exposure-Systems >}}
 {{< card news-20240319-TyProxi >}}
 {{< card news-20231018-Webinar-Esra >}}
-{{< card news-20231018-Influence-of-patient-head-definition >}}
-{{< card news-20230630-Efficient-Prediction-of-MRI-Gradient-Induced-Heating >}}
-{{< card news-20230215-First-release-of-o2S2PARC-powered-software >}}
 
 {{< /card-holder >}}
 
