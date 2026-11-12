@@ -14,6 +14,7 @@ IT’IS USA will focus on ensuring that SPARC’s growing data resources can ful
 We look forward to working closely with an outstanding group of collaborators, helping sustain and strengthen o²S²PARC and the SPARC Portal as a cornerstone resource for the neuromodulation research community.
 
 NIH grant PAR-23-237 award no. [1U24EB038234-01](https://reporter.nih.gov/search/MHoHk6xl40mbOdQto-rIkQ/project-details/11264491)
+
 Project Period: April 15, 2026 – February 28, 2031
 
 {{< modal-image news-2026-SPARC-award.jpg >}}
