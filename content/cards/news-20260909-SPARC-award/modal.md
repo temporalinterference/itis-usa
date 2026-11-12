@@ -1,5 +1,5 @@
 ---
-id: news-20260909-SPARC-award
+
 ---
 ## SPARC Award
 
