@@ -16,5 +16,5 @@ We look forward to working closely with an outstanding group of collaborators, h
 NIH grant PAR-23-237 award no. [1U24EB038234-01](https://reporter.nih.gov/search/MHoHk6xl40mbOdQto-rIkQ/project-details/11264491)
 Project Period: April 15, 2026 – February 28, 2031
 
-
-
+{{< modal-image news-2026-SPARC-award.jpg >}}
+{{< /modal-image >}}
